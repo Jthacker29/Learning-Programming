@@ -1,7 +1,9 @@
+#Takes the users input for how many minutes there are, converts it into hours and then minutes remaining.
 minutes = int(input("Enter minutes: \n"))
 hours = minutes // 60
 minutes_remaining = minutes % 60
 
+#Prints the amount of minutes originally entered then how many hours and minutes remain.
 print(minutes, 'minutes is', end=' ')
 print(hours, 'hours and', end=' ')
 print(minutes_remaining, 'minutes.\n', end=' ')

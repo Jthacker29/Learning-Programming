@@ -1,0 +1,12 @@
+#Import the math class
+import math
+
+#Gets the user input for how many guests there will be. The number of slices is then found by multiplying the number of guests by 2. 
+numGuests = int(input("How many guests will be attending? "))
+numSlices = 2 * numGuests
+numPizzas = math.ceil(numSlices / 12) #Find the number of pizzas by dividing the number of slices by 12 (12 slices per pizza), the math.ceil function then rounds the decimal up.
+
+#Determines the total cost then prints it and how many pizzas will be needed
+totalCost = numPizzas * 14.95
+print("Pizzas:", numPizzas)
+print(f'Cost: ${totalCost:.2f}')

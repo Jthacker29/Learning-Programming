@@ -1,7 +1,8 @@
+#Gets the users down payment, monthly payments, and how long the lease lasts.
 down_payment = int(input("Enter your down payment: "))
 monthly_payment = int(input("Enter your monthly payment: "))
 total_months = int(input("Enter the amount of months: "))
 
+#Assigns total_cost with the down payment added to the monthly payment multiplied by the length of the lease. This then prints the total cost.
 total_cost = down_payment + (monthly_payment * total_months)
-
 print("Total cost: ", total_cost)

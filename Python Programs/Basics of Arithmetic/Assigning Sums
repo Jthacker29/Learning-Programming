@@ -1,18 +1,25 @@
-total_coins = 0 #Creates and assigns total_coins with the value 0
+#This program will get the amount of coins a user has, then output the value of change, as well as how many coins they have in total.
 
-penny_count = int(input("How many pennies do you have? ")) #Asks the user for how many pennies they have
-nickel_count = int(input("How many nickels do you have? ")) #Asks the user for how many nickels they have
-dime_count = int(input("How many dimes do you have? ")) #Asks the user for how many dimes they have
-quarter_count = int(input("How many quarters do you have? ")) #Asks the user for how many quarters they have
+#Creates and assigns total_coins with the value 0.
+total_coins = 0
 
-total_coins = penny_count + nickel_count + dime_count + quarter_count #Assigns total_coins with the sum of pennies, nickels, dimes, and quarters
-print("You have ", total_coins, "coins") #Prints how many coins the user has
+#Asks the user for how many pennies, nickles, dimes, and quarters they have
+penny_count = int(input("How many pennies do you have? "))
+nickel_count = int(input("How many nickels do you have? "))
+dime_count = int(input("How many dimes do you have? "))
+quarter_count = int(input("How many quarters do you have? "))
 
-value_of_coins = 0 #Creates the variable, valueOfCoins, and assigns it with 0
-penny_value = penny_count * 1 #Creates a value equal to the worth of the users pennies
-nickel_value = nickel_count * 5 #Creates a value equal to the worth of the users nickels
-dime_value = dime_count * 10 #Creates a value equal to the worth of the users dimes
-quarter_value = quarter_count * 25 #Creates a value equal to the worth of the users quarters
+#Assigns total_coins with the sum of pennies, nickels, dimes, and quarters then prints said value.
+total_coins = penny_count + nickel_count + dime_count + quarter_count
+print("You have ", total_coins, "coins")
 
-value_of_coins = penny_value + nickel_value + dime_value + quarter_value #Assigns value_of_coins with the sum of penny_value, nickel_value, dime_value, and quarter_value
+#Creates the variable, valueOfCoins, and assigns it with 0 then creates values for pennies, nickels, dimes, and quarters equal to their worth
+value_of_coins = 0
+penny_value = penny_count * 1
+nickel_value = nickel_count * 5
+dime_value = dime_count * 10
+quarter_value = quarter_count * 25
+
+#Assigns value_of_coins with the sum of penny_value, nickel_value, dime_value, and quarter_value then prints said value
+value_of_coins = penny_value + nickel_value + dime_value + quarter_value
 print("Your coins are worth: ", value_of_coins)

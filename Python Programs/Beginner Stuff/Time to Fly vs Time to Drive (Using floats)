@@ -1,5 +1,6 @@
-miles = float(input("Enter a distance in miles: "))
+miles = float(input("Enter a distance in miles: ")) #Gets the distance to travel from the user
 
+#Determines the distance to travel by plane (flying) or by car (driving). Then prints the distances
 hours_to_fly = miles / 500.0
 hours_to_drive = miles / 60.0
 

@@ -1,8 +1,8 @@
-milesGallon = float(input())
-costOfGas = float(input())
+milesGallon = float(input()) #Gets the miles per gallon from the user
+costOfGas = float(input()) #Gets the cost of gas from the user
 
-costPer20 = (20 / milesGallon) * costOfGas
+costPer20 = (20 / milesGallon) * costOfGas #Divides the distance by miles per gallon then multiplies it by the cost of gas.
 costPer75 = (75 / milesGallon) * costOfGas
 costPer500 = (500 / milesGallon) * costOfGas
 
-print(f'{costPer20:.2f} {costPer75:.2f} {costPer500:.2f}')
+print(f'{costPer20:.2f} {costPer75:.2f} {costPer500:.2f}') #Prints the cost per distance limited to 2 decimals.

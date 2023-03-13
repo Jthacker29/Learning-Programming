@@ -1,7 +1,10 @@
-amount_to_change = int(input("How much change do you have? "))
+#Asks the user for how much money they want change on
+amount_to_change = int(input('How much change do you have? '))
 
+#Gets the amount of five dollar and one dollar bills by dividing by 5 and then using modulo, respectively.
 num_fives = amount_to_change // 5
 num_ones = amount_to_change % 5
 
+ #Prints the change in 5 dollar and 1 dollar bills
 print('Change for $', amount_to_change)
 print(num_fives, '$5 bill(s) and', num_ones, '$1 bill(s)')
