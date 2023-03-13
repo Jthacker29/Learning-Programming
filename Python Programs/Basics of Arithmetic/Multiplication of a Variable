@@ -1,0 +1,5 @@
+population_count = int(input("Enter your city's population, divided by 1000: ")) #Asks the user to input the population of their city, assigns said input to the population_count variable
+
+population_count *= 1000 #Takes the population_count variable and multiplies it by 1000 using the *= operator. This essentially does population_count = population_count * 1000
+
+print("The real population of your city must be:", population_count) #Outputs the real population and then the value of population_count

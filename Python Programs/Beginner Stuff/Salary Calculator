@@ -1,0 +1,14 @@
+hourly_wage = int(input("What is your hourly wage? ")) #Gets the hourly wage from the user
+hours_week = int(input("How many hours do you work per week? ")) #Gets the amount of hours worked per week 
+weeks_year = int(input("How many weeks do you work per year? ")) #Gets the amount of weeks worked per year
+
+annual_salary = (hourly_wage * hours_week * weeks_year)
+monthly_salary = (annual_salary / 12)
+
+print("Your monthly salary is: ")
+print(monthly_salary)
+print()
+
+print("Your annual salary is: ")
+print(annual_salary)
+print()
