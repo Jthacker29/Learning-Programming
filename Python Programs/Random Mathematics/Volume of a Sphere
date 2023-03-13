@@ -1,0 +1,8 @@
+import math
+
+pi = math.pi
+sphere_volume = 0.0
+sphere_radius = int(input("What is the radius of the sphere? "))
+
+sphere_volume = (4.0 / 3.0) * (pi * (sphere_radius ** 3))
+print(f'Sphere volume: {sphere_volume:.2f}')

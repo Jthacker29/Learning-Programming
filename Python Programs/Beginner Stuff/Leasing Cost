@@ -1,0 +1,7 @@
+down_payment = int(input("Enter your down payment: "))
+monthly_payment = int(input("Enter your monthly payment: "))
+total_months = int(input("Enter the amount of months: "))
+
+total_cost = down_payment + (monthly_payment * total_months)
+
+print("Total cost: ", total_cost)
