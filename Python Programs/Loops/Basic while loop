@@ -1,0 +1,9 @@
+curr_power = 2
+user_char = 'Y'
+
+while user_char == 'Y':
+    print(curr_power)
+    curr_power = curr_power * 2
+    user_char = input("Enter Y to continue doubling the value, any other value will end. ")
+
+print('Done')

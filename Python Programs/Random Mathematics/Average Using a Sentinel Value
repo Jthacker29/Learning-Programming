@@ -1,0 +1,11 @@
+values_sum = 0
+num_values = 0
+
+curr_value = int(input("Enter your first value: "))
+   
+while curr_value > 0: # Get values until 0 (or less)
+    values_sum += curr_value
+    num_values += 1
+    curr_value = int(input("Enter your next value (0 or a negative if there are none left): "))
+
+print(f'Average: {values_sum / num_values:.0f}\n')
