@@ -1,0 +1,6 @@
+office_num = int(input("Enter a number between 100-150 or 200-250. "))
+
+if (office_num >= 100 and office_num <= 150) or (office_num >= 200 and office_num <= 250):
+    print("That is a valid office number.")
+else:
+    print("That is not a valid office number.")
