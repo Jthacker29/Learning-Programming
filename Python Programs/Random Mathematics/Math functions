@@ -1,0 +1,12 @@
+import math
+
+x = float(input())
+y = float(input())
+z = float(input())
+
+xToZ = math.pow(x, z)
+xToY = math.pow(x, math.pow(y, z))
+absVal = math.fabs(x - y)
+sqrRoot = math.sqrt(xToZ)
+
+print(f'{xToZ:.2f} {xToY:.2f} {absVal:.2f} {sqrRoot:.2f}')
