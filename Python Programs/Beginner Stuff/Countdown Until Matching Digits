@@ -1,0 +1,9 @@
+userNum = int(input("What is your starting number? "))
+
+if userNum < 11 or userNum > 100:
+    print("Input must be 11-100")
+else:
+    print(userNum)
+    while (userNum % 11) != 0:
+        userNum -= 1
+        print(userNum)

@@ -1,0 +1,11 @@
+user_score = 0
+simon_pattern = input("What is Simon's pattern? ")
+user_pattern  = input("What is your pattern? ")
+
+for char in range(len(simon_pattern)):
+    if user_pattern[char] == simon_pattern[char]:
+        user_score += 1
+    else:
+        break
+
+print('User score:', user_score)

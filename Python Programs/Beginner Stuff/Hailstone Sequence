@@ -1,0 +1,15 @@
+startValue = int(input("What is the starting value? "))
+i = 1
+
+print(startValue, end='\t')
+while (startValue != 1):
+    if (i % 10 == 0):
+        print()
+    if ((startValue % 2) == 0):
+        startValue /= 2
+        print(int(startValue), end='\t')
+    else:
+        startValue = (startValue * 3) + 1
+        print(int(startValue), end='\t')
+    i += 1
+print()

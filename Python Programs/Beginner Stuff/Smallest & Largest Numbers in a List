@@ -1,0 +1,9 @@
+listNums = []
+
+while True:
+    userNums = int(input("Enter your numbers, use zero or a negative to end: "))
+    if userNums <= 0:
+        break
+    listNums.append(userNums)
+    
+print(min(listNums), "and", max(listNums))

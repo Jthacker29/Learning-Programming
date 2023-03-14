@@ -1,0 +1,14 @@
+num_rows = int(input("How many rows are there? "))
+num_cols = int(input("How many columns are there? "))
+
+rows = 1
+while rows <= num_rows:
+    cols = 1
+    alphabet = 'A'
+    while cols <= num_cols:
+        print('%s%s' % (rows, alphabet), end=' ')
+        cols = cols + 1
+        alphabet = chr(ord(alphabet) + 1)
+    rows = rows + 1
+
+print()

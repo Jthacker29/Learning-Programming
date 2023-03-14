@@ -1,0 +1,10 @@
+userNum1 = int(input("Enter your first number: "))
+userNum2 = int(input("Enter your second number: "))
+
+if userNum2 < userNum1:
+    print("Second integer can't be less than the first", end=".")
+else:
+    while userNum1 <= userNum2:
+        print(userNum1, end=' ')
+        userNum1 += 5
+print()
