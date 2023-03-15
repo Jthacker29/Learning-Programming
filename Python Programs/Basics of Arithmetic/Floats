@@ -2,6 +2,6 @@ wall_area = float(input("How many square feet is the wall? ")) #A float is a dec
 
 gallons_paint = wall_area / 350.0 #Divides the user wall_area by 350.0 and assigns it to gallons_paint
 
-print(gallons_paint) #Prints the gallons of paint needed.
+print(f'The gallons of paint needed is {gallons_paint:.5f}') #Prints the gallons of paint needed.
 
 #This program assumes that 1 gallon covers 350 square feet, calculates how much paint is needed for the given wall size.

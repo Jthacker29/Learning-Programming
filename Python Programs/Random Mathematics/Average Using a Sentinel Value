@@ -8,4 +8,5 @@ while curr_value > 0: # Get values until 0 (or less)
     num_values += 1
     curr_value = int(input("Enter your next value (0 or a negative if there are none left): "))
 
-print(f'Average: {values_sum / num_values:.0f}\n')
+average = values_sum / num_values
+print(f'Average: {average:.0f}\n')
