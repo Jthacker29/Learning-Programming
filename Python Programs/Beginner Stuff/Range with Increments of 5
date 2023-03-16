@@ -1,9 +1,11 @@
+#Gets user inputs for two numbers
 userNum1 = int(input("Enter your first number: "))
 userNum2 = int(input("Enter your second number: "))
 
+#If the second user input is less than the first the program will terminate and tell the user why
 if userNum2 < userNum1:
     print("Second integer can't be less than the first", end=".")
-else:
+else: #If the two inputs are valid, the loop will run while the first number is less than the second, printing the first number and adding 5 to it every iteration.
     while userNum1 <= userNum2:
         print(userNum1, end=' ')
         userNum1 += 5

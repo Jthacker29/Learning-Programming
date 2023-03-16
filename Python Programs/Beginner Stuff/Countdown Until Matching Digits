@@ -1,8 +1,10 @@
+#Gets a starting number from the user
 userNum = int(input("What is your starting number? "))
 
+#This if statement will run if the user input is less than 11 or greater than 100. It will then print the statement and terminate the program.
 if userNum < 11 or userNum > 100:
     print("Input must be 11-100")
-else:
+else: #Runs if userNum is between 11-100, prints the user number to begin then states that while it is not divisible by 11 it will run the while loop.
     print(userNum)
     while (userNum % 11) != 0:
         userNum -= 1

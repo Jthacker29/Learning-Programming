@@ -15,11 +15,13 @@ print(num_final_scores, 'students took the final.')
 dropped_students = num_midterm_scores - num_final_scores
 print(dropped_students, 'students must have dropped the class.')
 
+#Uses min and max to get the lowest and highest scores for the final
 lowest_final = min(final_scores)
 highest_final = max(final_scores)
 
 print('\nFinal scores ranged from', lowest_final, 'to', highest_final)
 
+#Uses sum and len to find the average for the midterm and final
 average_midterm = sum(midterm_scores) / len(midterm_scores)
 average_final = sum(final_scores) / len(final_scores)
 

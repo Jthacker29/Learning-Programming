@@ -1,7 +1,9 @@
+#Gets user inputs for the RGB values
 red = int(input("What is the value of red? "))
 green = int(input("What is the value of green? "))
 blue = int(input("What is the value of blue? "))
 
+#If the value of red is less than green and blue
 if (red < green) and (red < blue):
     smallestValue = red
     red = red - smallestValue

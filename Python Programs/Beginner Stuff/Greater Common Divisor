@@ -1,13 +1,16 @@
+#Gets the first user input and creates a new line below it
 num_a = int(input('Enter first positive integer: '))
 print()
 
+#Gets the second user input and creates a new line below it
 num_b = int(input('Enter second positive integer: '))
 print()
 
+#States that while num_a is NOT equal to num_b, it will run the if-else.
 while num_a != num_b:
-    if num_a > num_b:
+    if num_a > num_b: #If num_a is greater than num_b then num_a is updated with num_a - num_b.
         num_a = num_a - num_b
-    else:
+    else: #If num_a is less than num_b it will update num_b with num_b - num_a.
         num_b = num_b - num_a
 
 print(f'GCD is {num_a}') 

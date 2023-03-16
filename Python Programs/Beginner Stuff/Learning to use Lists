@@ -1,7 +1,9 @@
+#Gets user inputs for the first three flowers
 my_flower1 = input()
 my_flower2 = input()
 my_flower3 = input()
 
+#Gets user inputs for the next three flowers
 your_flower1 = input()
 your_flower2 = input()
 

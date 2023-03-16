@@ -1,10 +1,12 @@
+#Gets user input for the year
 year = int(input())
 
+#If the year is greater than or equal to 2101, it will output "Distant future"
 if year >= 2101:
     print("Distant future")
-elif year >= 2001:
+elif year >= 2001: #If the year is less than 2101 and greater than 2001, it will output "21st century"
     print("21st century")
-elif year >= 1901:
+elif year >= 1901: #If the year is less than 2001 and greater than 1901, it will output "20th century"
     print("20th century")
-else:
+else: #If the year is less than 1901 it will output "Long ago"
     print("Long ago")

@@ -1,15 +1,17 @@
+#Receives a starting value from the user
 startValue = int(input("What is the starting value? "))
-i = 1
+i = 1 #Declared for the sake of formatting
 
+#Prints the beginning value then spaces the end with a tab
 print(startValue, end='\t')
-while (startValue != 1):
-    if (i % 10 == 0):
+while (startValue != 1): #While the startValue does not equal 1 the loop will run
+    if (i % 10 == 0): #Prints a new line when ten inputs have been reached
         print()
-    if ((startValue % 2) == 0):
+    if ((startValue % 2) == 0): #If the startValue is divisible by two then divide it by two then print it and end with a tab.
         startValue /= 2
         print(int(startValue), end='\t')
-    else:
+    else: #If the startValue is not divisible by two then multiply it by 3 and add 1, then print and end with a tab.
         startValue = (startValue * 3) + 1
         print(int(startValue), end='\t')
-    i += 1
+    i += 1 #Updates every time a value is printed, used for formatting
 print()

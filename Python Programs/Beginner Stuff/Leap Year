@@ -1,12 +1,13 @@
 is_leap_year = False
-   
+#Gets the input year from the user  
 input_year = int(input("Enter a year: "))
 
+#If the input_year is divisible by 4 and is not divisible by 100 then it will print the year and state it is a leap year
 if (input_year % 4 == 0) and (input_year % 100 != 0):
     print(input_year, "- leap year")
-elif (input_year % 100 == 0) and (input_year % 400 != 0):
+elif (input_year % 100 == 0) and (input_year % 400 != 0): #If the input does not pass the first check, but is divisible by 100 and not divisible by 400, print the year and not a leap year
     print(input_year, "- not a leap year")
-elif (input_year % 400 == 0) and (input_year % 100 == 0):
+elif (input_year % 400 == 0) and (input_year % 100 == 0): #If the input does not pass the two checks, but is divisible by 400 and 100, print the year and state it is a leap year
     print(input_year, "- leap year")
-else:
+else: #If the year does not meet any of the above statements it is not a leap year
     print(input_year, "- not a leap year")
