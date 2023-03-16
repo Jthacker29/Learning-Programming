@@ -1,0 +1,7 @@
+public class Outputting {
+    public static void main (String [] args) {
+        System.out.print("Hello")
+        System.out.print("Jacob")
+        System.out.print("Welcome to Java Programming")
+    }
+}

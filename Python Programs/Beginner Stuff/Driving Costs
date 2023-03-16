@@ -1,5 +1,5 @@
-milesGallon = float(input()) #Gets the miles per gallon from the user
-costOfGas = float(input()) #Gets the cost of gas from the user
+milesGallon = float(input("How many miles per gallon do you get? ")) #Gets the miles per gallon from the user
+costOfGas = float(input("What is the cost of gas per gallon? ")) #Gets the cost of gas from the user
 
 costPer20 = (20 / milesGallon) * costOfGas #Divides the distance by miles per gallon then multiplies it by the cost of gas.
 costPer75 = (75 / milesGallon) * costOfGas
