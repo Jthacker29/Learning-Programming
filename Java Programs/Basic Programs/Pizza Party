@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int numSlicesPerPizza = 12;
+      int numSlicesPerPerson = 2;
+      int numGuests = scnr.nextInt();
+      int numSlicesNeeded = numGuests * numSlicesPerPerson;
+      
+      int numPizzas = (numSlicesNeeded + numSlicesPerPizza - 1) / numSlicesPerPizza;
+      double cost = numPizzas * 14.95;
+      System.out.println("Pizzas: " + numPizzas);
+      System.out.printf("Cost: $%.2f\n", cost);
+   }
+}

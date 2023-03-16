@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      double milesPerGallon;
+      double dollarsPerGallon;
+      double gasCost;
+      
+      Scanner scnr = new Scanner(System.in);
+      milesPerGallon = scnr.nextDouble();
+      dollarsPerGallon = scnr.nextDouble();
+      
+      gasCost = dollarsPerGallon / milesPerGallon;
+      
+      System.out.printf("%.2f", gasCost * 20);
+      System.out.print(" ");
+      System.out.printf("%.2f", gasCost * 75);
+      System.out.print(" ");
+      System.out.printf("%.2f\n", gasCost * 500);
+   }
+}

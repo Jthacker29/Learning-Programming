@@ -1,0 +1,20 @@
+import java.util.Random;
+
+public class ThreeRandomValues {
+   public static void main(String[] args) {
+    Random randGen = new Random();  // New random number generator
+
+    System.out.println(randGen.nextInt());
+    System.out.println(randGen.nextInt());
+    System.out.println(randGen.nextInt());
+   }
+}
+
+/* The Random class has methods that return a random integer in the range -2^31 to 2^31 - 1. 
+The user can also define a range by adding an integer in the parentheses of nextInt()
+For example, nextInt(10) would return 10 values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+Taking this further, if we want to generate in a range such as 16 to 25 we can use
+randGen.nextInt(6) + 10. This would generate 10, 11, 12, 14, 15. 
+Another example is randGen.nextInt(10) + 16 would generate from 16 to 25.
+Lastly, negatives can also be used; randGen.nextInt(41) + -20 would generate
+in the range of -20 to 20. */

@@ -1,0 +1,14 @@
+import java.util.Random;
+
+public class SeededRandomValues {
+   public static void main(String[] args) {
+    Random randGen = new Random(15);  // Seed with 15
+
+    System.out.println(randGen.nextInt());
+    System.out.println(randGen.nextInt());
+    System.out.println(randGen.nextInt());
+   }
+}
+/* Seeding allows us to run the program over and over and result in the same numbers being produced
+for example, this would generate -1159716814, -898526952, and 453225476 each time it is ran. These numbers
+are random, though would be produced each time the program is used. */
