@@ -1,0 +1,25 @@
+import java.util.Scanner; 
+
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int userNum = 0;
+      int count = 0;
+      int max = 0;
+      double avg = 0;
+      int total = 0;
+      
+      userNum = scnr.nextInt();
+      
+      while (userNum >= 0) {
+         count++;
+         total += userNum;
+         max = Math.max(max, userNum);
+         userNum = scnr.nextInt();
+      }
+      
+      avg = ((double)total) / (count);
+      System.out.print(max + " ");
+      System.out.printf("%.2f\n", avg);
+   }
+}
