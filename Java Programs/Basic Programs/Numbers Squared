@@ -1,0 +1,19 @@
+//Allows inputs from users
+import java.util.Scanner;
+
+//Creates the NumSquared function
+public class NumSquared {
+    public static void main(String[] args) {
+        //User inputs, declares the variables userNum & userNumSquared as integers.
+        Scanner scnr = new Scanner(System.in);
+        int userNum;
+        int userNumSquared;
+
+        //Gets the next user integer and assigns it to userNum, then updates userNumSquared with userNum * userNum
+        userNum = scnr.nextInt();
+        userNumSquared = userNum * userNum;
+
+        //Prints "The result is userNumSquared"
+        System.out.println("The result is " + userNumSquared);
+    }
+}

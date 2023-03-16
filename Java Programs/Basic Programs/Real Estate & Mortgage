@@ -1,0 +1,21 @@
+//User inputs
+import java.util.Scanner;
+
+//Creates function RealEstate
+public class RealEstate {
+    public static void main(String[] args) {
+        //User inputs
+        Scanner scnr = new Scanner(System.in);
+        int currentPrice;
+        int lastMonthsPrice;
+
+        //Assigns the following variables with the next integers
+        currentPrice = scnr.nextInt();
+        lastMonthsPrice = scnr.nextInt();
+
+        //Prints the following
+        System.out.print("This house is " + currentPrice + ". ");
+        System.out.println("The change is $" + (currentPrice - lastMonthsPrice) + " since last month.");
+        System.out.println("The estimated monthly mortgage is $" + (currentPrice * 0.051) / 12 + ".")
+    }
+}

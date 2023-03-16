@@ -3,11 +3,14 @@ import java.util.Scanner;
 
 //Creates the function Salary
 public class Salary {
+    //Defines the main function to receive no parameters or return anything
     public static void main (String [] args) {
+        //Defines the scanner for user inputs
         Scanner scnr = new Scanner(System.in);
+        //Declines the integer wage, and then updates it with a user input that is an integer
         int wage;
         wage = scnr.nextInt();
-
+        //Prints "Your salary is " with the updated value of wage, only the second print statement will create a new line
         System.out.print("Your salary is ");
         System.out.println(wage * 40 * 52);
     }

@@ -1,11 +1,21 @@
+//Creates the function Outputting
 public class Outputting {
+    //Creates the main function
     public static void main (String [] args) {
-        System.out.print("Hello")
-        System.out.print("Jacob")
-        System.out.print("Welcome to Java Programming")
+        //Prints "HelloJacobWelcome to Java Programming"
+        System.out.print("Hello");
+        System.out.print("Jacob");
+        System.out.print("Welcome to Java Programming");
 
-        System.out.println("Hello")
-        System.out.println("Jacob")
-        System.out.println("Welcome to Java Programming")
+        /*Prints "Hello
+                 "Jacob"
+                 "Welcome to Java Programming" */
+        System.out.println("Hello");
+        System.out.println("Jacob");
+        System.out.println("Welcome to Java Programming");
+
+        //Prints "The total is (cost)."
+        cost = 14.59
+        System.out.println("The total is " + cost);
     }
 }
