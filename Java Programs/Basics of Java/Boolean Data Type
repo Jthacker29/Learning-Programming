@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class RestaurantWaitCalc {
+   public static void main (String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int waitTime;
+      int partySize;
+      char day;
+      String userInput;
+      boolean isLargeParty;
+      boolean isWeekend;
+   
+      // Get day of reservation
+      System.out.print("Day of reservation (T/W/R/F/S/U): ");
+      userInput = scnr.next();
+      day = userInput.charAt(0);
+      if (day == 'F' || day == 'S' || day == 'U') { // A Logical OR is ||
+         isWeekend = true;
+      }
+      else {
+         isWeekend = false;
+      }
+   
+      // Get party size
+      System.out.print("Enter party size: ");
+      partySize = scnr.nextInt();
+      isLargeParty = (partySize > 6);
+   
+      // Determine wait time based on day of week and party size
+      if (isWeekend && !isLargeParty) {
+         waitTime = 30;
+      }
+      else if (!isWeekend && !isLargeParty) {
+         waitTime = 10;
+      }
+      else if (isWeekend && isLargeParty) {
+         waitTime = 45;
+      }
+      else {
+         waitTime = 15;
+      }
+   
+      System.out.println("Restaurant wait time is " + waitTime +
+                         " minutes.");
+   }
+}

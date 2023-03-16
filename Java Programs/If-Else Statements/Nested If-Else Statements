@@ -1,0 +1,11 @@
+if (numItems > 3) {     
+   if (totalCost > 100) {       // numItems > 3 and totalCost > 100
+      saleDiscount = 20;
+   }
+   else if (totalCost > 50) {  // numItems > 3 and totalCost > 50
+      saleDiscount = 10;
+   }
+}
+else if (numItems > 0) {
+   ...
+}

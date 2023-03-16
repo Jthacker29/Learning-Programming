@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class MovieTicketPrices {
+  public static void main(String[] args) {
+     int userAge;
+     int movieTicketPrice;     
+     Scanner scnr = new Scanner(System.in);
+
+     System.out.println("Enter your age: ");
+     userAge = scnr.nextInt();
+
+     if (userAge <= 12) {         // Age 12 and under
+        System.out.println("Child ticket discount.");
+        movieTicketPrice = 11;
+     }
+     else if (userAge >= 65) {    // Age 65 and older
+        System.out.println("Senior ticket discount.");
+        movieTicketPrice = 12;
+     }
+     else {                       // All other ages
+        movieTicketPrice = 14;
+     }
+
+     System.out.println("Movie ticket price: $" +
+        movieTicketPrice);
+  }
+}
+
+/* Ranges with gaps using Logical Operators
+if ((officeNum >= 100 && officeNum <= 150) || (officeNum >= 200 && officeNum <= 250)) {
+   // valid office number
+}
+else {
+   // invalid office number
+} 
+*/

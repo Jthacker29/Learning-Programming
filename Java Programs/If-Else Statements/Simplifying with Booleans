@@ -1,0 +1,23 @@
+isHot = (currentTemp > desiredTemp);
+isReallyHot = (currentTemp > (desiredTemp + 5.0));
+isHumid = (currentHumidity > 0.50);
+   
+if (isReallyHot) {
+   // Use A/C and evaporative cooler
+   acOn = true;
+   evapCoolerOn = true;
+}
+else if (isHot && isHumid) {
+   // Use A/C
+   acOn = true;
+   evapCoolerOn = false;
+}
+else if (isHot && !isHumid) {
+   // Use evaporative cooler
+   acOn = false;
+   evapCoolerOn = true;
+}
+else {
+   acOn = false;
+   evapCoolerOn = false;
+}

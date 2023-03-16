@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StringEquality {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      String userWord;
+
+      System.out.print("Enter a word: ");
+      userWord = scnr.next();
+
+      if (userWord.equals("USA")) {
+         System.out.println("United States of America");
+      } 
+      else {
+         System.out.println(userWord);
+      }
+   }
+}
+
+/* When comparing two strings there are three relational operators that we can use
+those are: str1.compareTo(str2) < 0 which compares if str1 is less than str2,
+str1.compareTo(str2) == 0 compares if they are equal, and then str1.compareTo(str2) > 0
+which compares if str1 is greater than str2. We can also make use of the 
+str1.equalsIgnoreCase(str2) & str1.compareToIgnoreCase(str2) to compare strings
+while ignoring case (capitalization). */
