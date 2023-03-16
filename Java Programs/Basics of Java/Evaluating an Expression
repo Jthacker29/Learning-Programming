@@ -1,0 +1,24 @@
+//User inputs
+import java.util.Scanner;
+
+//Creates function ComputingFinalResult
+public class ComputingFinalResult {
+   public static void main(String[] args) {
+    //User inputs, initializes num1, num2, and finalResult.
+    Scanner scnr = new Scanner(System.in);
+    int num1;
+    int num2;
+    int finalResult;
+
+    //Gets the next integers from num1 & num2 respectively.
+    num1 = scnr.nextInt();
+    num2 = scnr.nextInt();
+
+    //Updates finalResult with the sum of num1 and num2 divided by 3.
+    finalResult = (num1 + num2) / 3;
+
+    //Prints the "Final result: 3"
+    System.out.print("Final result: ");
+    System.out.println(finalResult);
+   }
+}

@@ -1,0 +1,5 @@
+//Prints "Default output of pi: 3.141592653589793"
+System.out.println("Default output of pi: " + Math.PI);
+//Prints "pi reduced to 4 digits after the decimal: 3.1416" the last digit is rounded up in the output, though it does not change the value of pi
+System.out.print("pi reduced to 4 digits after the decimal: ");
+System.out.printf("%.4f", Math.PI);

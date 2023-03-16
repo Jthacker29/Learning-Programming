@@ -1,0 +1,34 @@
+//User inputs
+import java.util.Scanner;
+
+//Function HealthData
+public class HealthData {
+   public static void main(String[] args) {
+    //User inputs, initializes userAgeYears, userAgeDays, userAgeMinutes, totalHeartbeats, and avgBeatsPerMinute (declares the last with 72)
+    Scanner scnr = new Scanner(System.in);
+    int userAgeYears;
+    int userAgeDays;
+    int userAgeMinutes;
+    int totalHeartbeats;
+    int avgBeatsPerMinute = 72;
+    
+    //Gets the user's age in years and assigns it to userAgeYears
+    System.out.print("Enter your age in years: ");
+    userAgeYears = scnr.nextInt();
+    
+    //Calculates the days without leap years then adds days for leap years then updates userAgeDays with it
+    userAgeDays = userAgeYears * 365;
+    userAgeDays = userAgeDays + (userAgeYears / 4);
+   
+    //Prints "You are (userAgeDays) days old.""
+    System.out.println("You are " + userAgeDays + " days old.");
+   
+    //Updates userAgeMinutes with userAgeDays * 24 * 60 then prints "You are (userAgeMinutes) minutes old."
+    userAgeMinutes = userAgeDays * 24 * 60; // 24 hours/day, 60 minutes/hour
+    System.out.println("You are " + userAgeMinutes + " minutes old.");
+
+    //Updates totalHeartbeats with userAgeMinutes * avgBeatsPerMinute the prints "You heart has beat (totalHeartbeats) times."
+    totalHeartbeats = userAgeMinutes * avgBeatsPerMinute;
+    System.out.println("Your heart has beat " + totalHeartbeats + " times.");
+   }
+}

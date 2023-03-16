@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class GasOilMixRatio {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    //Initializes the variables gasVolume, oilVolume, and mixRatio.
+    double gasVolume;
+    double oilVolume;
+    double mixRatio;
+   
+    //Gets the user input for gas volume and assigns it to gasVolume
+    System.out.print("Enter gas volume: ");
+    gasVolume = scnr.nextDouble();
+
+    //Gets the user input for oil volume and assigns it to oilVolume
+    System.out.print("Enter oil volume: ");
+    oilVolume = scnr.nextDouble();
+
+    //Assume the oilVolume is 0.0
+    mixRatio = gasVolume / oilVolume;
+    //Prints "Gas to oil mix ratio is Infinity:1"
+    System.out.print("Gas to oil mix ratio is " + mixRatio + ":1");
+   }
+}

@@ -1,0 +1,30 @@
+public class Mice {
+    public static void main(String[] args) {
+        //Creates the variables below
+        int litterSize;
+        int yearlyLitters;
+        int annualMice;
+
+        //Assigns the following variables with 3 and 5 respectively.
+        litterSize = 3;
+        yearlyLitters = 5;
+
+        //Prints "One female mouse may give birth to "
+        System.out.print("One female mouse may give birth to ");
+        //Assigns annualMice with litterSize multiplied by yearlyLitters.
+        annualMice = litterSize * yearlyLitters;
+        //Finishes the output from before with "15 mice,"
+        System.out.println(annualMice + "mice,");
+
+        //Updates the following variables with 14 and 10 respectively.
+        litterSize = 14;
+        yearlyLitters = 10;
+
+        //Prints"and up to ""
+        System.out.print("and up to ");
+        //Updates annualMice with the new sum of litterSize multiplied by yearlyLitters.
+        annualMice = litterSize * yearlyLitters;
+        //Finishes the output from before with "140 mice, in a year."
+        System.out.println(annualMice + "mice, in a year.");
+    }
+}

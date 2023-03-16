@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SphereVolumeCalculator {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    //Initializes the variables sphereVolume & sphereRadius
+    double sphereVolume;
+    double sphereRadius;
+
+    //Updates sphereRadius with the next user double input
+    sphereRadius = scnr.nextDouble();
+
+    //Initializes and assigns r3 with sphereRadius to the power of 3
+    double r3 = sphereRadius * sphereRadius * sphereRadius;
+    //Updates sphereVolume with (4.0 / 3.0) * pi * r3
+    sphereVolume = (4.0 / 3.0) * Math.PI * r3;
+
+    //Prints sphereVolume with 2 decimal places
+    System.out.printf("%.2f\n", sphereVolume);
+   }
+}
