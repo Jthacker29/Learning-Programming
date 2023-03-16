@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Salary {
+    public static void main (String [] args) {
+        Scanner scnr = new Scanner(System.in);
+        int wage;
+        wage = scnr.nextInt();
+
+        System.out.print("Your salary is ");
+        System.out.println(wage * 40 * 52);
+    }
+}
