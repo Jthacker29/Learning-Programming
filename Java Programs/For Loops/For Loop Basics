@@ -21,4 +21,8 @@ the next value is the loop expression, or how many times it will iterate to or t
 variable that it will find itself evaluating to, and after the next semicolon 
 is the last value, or the increment per iteration. 
 We can also replace i = i + 1 with ++i as an increment operator
-or --i as a decrement operator. */
+or --i as a decrement operator.
+The ++ operator can appear as ++i (prefix form) or as i++ (postfix form).
+ ++i increments i first and then evaluates the result, while i++ evaluates the result first
+  and then increments i. The distinction is relevant in a statement like
+ x = ++i vs. x = i++; if i is 5, the first yields x = 6, the second x = 5. */
