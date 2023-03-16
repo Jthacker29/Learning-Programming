@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      Scanner scnr = new Scanner(System.in);
+      int red;
+      int green;
+      int blue;
+      int smallestValue;
+      
+      red = scnr.nextInt();
+      green = scnr.nextInt();
+      blue = scnr.nextInt();
+      
+      if ((red < green) && (red < blue)) {
+         smallestValue = red;
+      }
+      else if ((green < red) && (green < blue)) {
+         smallestValue = green;
+      }
+      else {
+         smallestValue = blue;
+      }
+      
+      red = red - smallestValue;
+      green = green - smallestValue;
+      blue = blue - smallestValue;
+      
+      System.out.println(red + " " + green + " " + blue);
+   }
+}
