@@ -1,12 +1,16 @@
+#Declares initial savings & interest rates
 initial_savings = 10000
 interest_rate = 0.05
 
+#Gets the user input for how many years they will be saving
 years = int(input('Enter years: '))
 print()
 
+#Sets savings equal to the initial amount, and loops every year starting from 0 to the user's input length.
 savings = initial_savings
-for i in range(0, years, 3):
-    print(f' Savings in year {i}: ${savings:.2f}')
-    savings = savings + (savings*interest_rate)
+for i in range(0, years, 3): #Will only output every 3 years, can be changed by changing the 3 to whatever increment you want
+    print(f' Savings in year {i}: ${savings:.2f}') #Prints the savings with a decimal of 2.
+    savings = savings + (savings*interest_rate) #Updates savings with the savings + (savings*interest_rate)
 
+#Simply creates a new line
 print('\n')

@@ -1,9 +1,12 @@
+#Initializes the variable avg_sales with 0
 avg_sales = 0
 
+#Gets user input for the number of the three sales
 num_sales1 = int(input())
 num_sales2 = int(input())
 num_sales3 = int(input())
 
+#Updates avg_sales with the sum of the number of the three sales divided by 3 then prints it with 2 decimal places
 avg_sales = (num_sales1 + num_sales2 + num_sales3) / 3
 
 print(f'Average sales: {avg_sales:.2f}')

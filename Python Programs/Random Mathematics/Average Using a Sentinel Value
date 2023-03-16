@@ -1,12 +1,15 @@
+#Initializes values_sum & num_values with 0
 values_sum = 0
 num_values = 0
 
+#Gets the user to input their first number
 curr_value = int(input("Enter your first value: "))
    
+#While the user number is greater than 0, the loop will continue. Starts by updating values_sum with it plus the current value every iteration
 while curr_value > 0: # Get values until 0 (or less)
     values_sum += curr_value
-    num_values += 1
-    curr_value = int(input("Enter your next value (0 or a negative if there are none left): "))
+    num_values += 1 #Updates num_values by 1 every iteration
+    curr_value = int(input("Enter your next value (0 or a negative if there are none left): ")) #Gets the user to input another number, allowing 0 or a negative to end inputs
 
-average = values_sum / num_values
+average = values_sum / num_values #Initializes and assigns the average value with values_sum / num_values and prints it with 2 decimal places
 print(f'Average: {average:.0f}\n')

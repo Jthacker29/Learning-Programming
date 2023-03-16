@@ -1,14 +1,16 @@
+#Asks the user for how many rows & columns there are
 num_rows = int(input("How many rows are there? "))
 num_cols = int(input("How many columns are there? "))
 
+#Declares a value for rows so that it can be compared to the number of rows we need to reach
 rows = 1
-while rows <= num_rows:
-    cols = 1
-    alphabet = 'A'
-    while cols <= num_cols:
-        print('%s%s' % (rows, alphabet), end=' ')
-        cols = cols + 1
-        alphabet = chr(ord(alphabet) + 1)
-    rows = rows + 1
+while rows <= num_rows: #Will loop until we have reached the desired amount of rows
+    cols = 1 #Declares a value for columns so that it can be compared to the number of columns we need to reach
+    alphabet = 'A' #Begins the alphabet so that we can add it to the ending of our rows, 1A 1B 1C
+    while cols <= num_cols: #Will loop until we have reached the desired amount of columns
+        print('%s%s' % (rows, alphabet), end=' ') #Takes the %s%s placeholders and replaces them with the values of rows & alphabet respectively, ends with a space.
+        cols = cols + 1 #Updates columns by 1
+        alphabet = chr(ord(alphabet) + 1) #Updates the alphabet by going to the next letter, 'B', 'C', until the amount of columns has been reached
+    rows = rows + 1 #Updates rows by 1
 
 print()

@@ -1,6 +1,9 @@
+#Declares the alphabet variable with the alphabet
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+#Asks the user for a number 0-25, in this case 0 represents 1 and 25 represents 26.
 user_number = int(input('Enter number to use as index (0 - 25): '))
 print()
 
+#Prints the text and the user number, then states what letter of the alphabet it is at that index.
 print('\nThe letter at index', user_number, 'of the alphabet is', alphabet[user_number])

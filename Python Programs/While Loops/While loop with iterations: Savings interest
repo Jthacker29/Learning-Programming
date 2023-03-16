@@ -1,6 +1,8 @@
+#Declares initial_savings with 10000 and interest_rate with 0.05
 initial_savings = 10000
 interest_rate = 0.05
 
+#Prints the initial savings value & its yearly interest rate
 print(f'Initial savings of ${initial_savings}')
 print(f'at {interest_rate*100:.0f}% yearly interest.\n')
 

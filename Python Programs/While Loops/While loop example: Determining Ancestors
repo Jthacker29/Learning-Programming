@@ -1,12 +1,14 @@
-year_considered = 2020  # Year being considered
+year_considered = 2023  # Year being considered
 num_ancestors = 2  # Approx. ancestors in considered year
 years_per_generation = 20  # Approx. years per generation
 
+#Asks the user for a year in the past then creates a new line
 user_year = int(input('Enter a past year (neg. for B.C.): '))
 print()
 
+#While year_considered is greater than or equal to the user input the loop will continue
 while year_considered >= user_year:
-    print(f'Ancestors in {year_considered}: {num_ancestors}')
+    print(f'Ancestors in {year_considered}: {num_ancestors}') #Print the year_considered and the number of ancestors
     
-    num_ancestors = num_ancestors * 2
-    year_considered = year_considered - years_per_generation
+    num_ancestors = num_ancestors * 2 #Updates num_ancestors with num_ancestors * 2
+    year_considered = year_considered - years_per_generation #Updates year_considered with year_considered minus years_per_generation

@@ -1,11 +1,15 @@
+#Declares a list with the values '10' and 'bw', then prints it
 my_list = [10, 'bw']
 print(my_list)
 
+#Adds 'abc' to the list, then prints the new list
 my_list.append('abc')
 print('After append:', my_list)
 
+#Removes the second value from the list, then prints the new list
 my_list.pop(1)
 print('After pop:', my_list)
 
+#Removes the first instance of the term 'abc' from the list, then prints the new list
 my_list.remove('abc')
 print('After remove:', my_list)

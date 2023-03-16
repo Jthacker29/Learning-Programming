@@ -1,8 +1,10 @@
+#Declares i with 1 for the sake of loops
 i = 1
 
-user_num = int(input("What do you want to count to? ")) # Assume positive
-print("\nOn your mark!\nGet set!\n")
-while i <= user_num:
+#Asks the user for a number they want to count to 
+user_num = int(input("What do you want to count to? ")) #Assume the user value is positive
+print("\nOn your mark!\nGet set!\n") #Create a new line, print "On your mark" create a new line, print "Get set!" and create a new line
+while i <= user_num: #While i, defaulted to 1, is less than the user value, print i then increment it by 1.
     print(i)
-    i = i + 1
-print("\nGO!")
+    i += 1
+print("\nGO!") #Create a new line, print "GO!"

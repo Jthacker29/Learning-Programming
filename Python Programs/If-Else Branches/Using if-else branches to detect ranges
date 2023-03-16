@@ -1,16 +1,17 @@
+#Gets the user to input their age
 user_age = int(input('Enter your age: '))
 
-if user_age < 16:          # Age 15 and under
+if user_age < 16:          # Age 15 and under, print "Too young" and set insurance_price to 0
    print('Too young.')
    insurance_price = 0
 
-elif user_age < 25:        # Age 16 - 24
+elif user_age < 25:        # Age 16 - 24, set insurance_price to 4800
    insurance_price = 4800
 
-elif user_age < 40:         # Age 25 - 39
+elif user_age < 40:         # Age 25 - 39, set insurance_price to 2350
    insurance_price = 2350
 
-else:                      # Age 40 and up
+else:                      # Age 40 and up, set insurance_price to 2100
    insurance_price = 2100
 
 print('Annual price: $', insurance_price)

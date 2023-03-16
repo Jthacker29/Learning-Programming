@@ -1,15 +1,17 @@
+#Declares the nose value and user_value
 nose = '0'  # Looks a little like a nose
 user_value = '-'
 
+#'q' will act as a sentinel value, meaning that until it is used as an input, the loop will continue
 while user_value != 'q':
-    print(f' {user_value} {user_value} ')  # Print eyes     
-    print(f'  {nose}  ')  # Print nose     
-    print(user_value*5)  # Print mouth
-    print('\n')
+    print(f' {user_value} {user_value} ')  #Prints the user value twice, _ _
+    print(f'  {nose}  ')  # Print the nose, 0
+    print(user_value*5)  #Prints the user value five times, _____
+    print('\n') #Creates a new line
 
-    # Get new character for eyes and mouth
+    # Get new character for eyes and mouth, such as x, allowing the user to enter 'q' to exit the loop
     user_input = input("Enter a character ('q' for quit): \n")
-    user_value = user_input[0]
+    user_value = user_input[0] #Updates user_value with the user's input
 
 print('Goodbye.\n')
 

@@ -1,12 +1,14 @@
+#Tells the user to pick 1 or 2, though any value is allowed. Then asks the user to enter a number
 user_choice = int(input("Pick 1 or 2: "))
 num_items = int(input("Enter a number: "))
 
+#If the user picked 1, print "User choice is 1"
 if user_choice == 1:
     print("User choice is 1")
-elif user_choice == 2:
+elif user_choice == 2: #If the user picked 2, print "User choice is 2 and number of items is less than 0." if the num_items < 0. 
     if num_items < 0:
         print("User choice is 2 and number of items is less than 0.")
-    else:
+    else: #Otherwise print "User choice is 2 and number of items is greater than or equal to 0."
         print("User choice is 2 and number of items is greater than or equal to 0.")
-else:
+else: #If the user picked anything other than 1 or 2, print "User choice is neither 1 or 2"
     print("User choice is neither 1 or 2")

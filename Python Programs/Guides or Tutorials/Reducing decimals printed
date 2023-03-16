@@ -1,5 +1,7 @@
+#Imports the math class so we can have the value of pi assigned with math.pi
 import math
 
+#Prints the default output of the math.pi function, then prints it with the decimals reduced to four places.
 print("Default output of Pi: ", math.pi)
 print("Pi reduced to 4 digits after the decimal: ", end=" ")
 print(f'{math.pi:.4f}')

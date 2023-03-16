@@ -1,7 +1,11 @@
+#Declares num with 0
 num = 0
+
+#While the num is >= 0, update the value with the user's input, a negative ends the inputs
 while num >= 0:
     num = int(input('Enter an integer (negative to quit):\n'))
 
+#If the number is >= 0 still, enter the if statement and print an * for every number in the range of the user value.
     if num >= 0:
         print('Depicted graphically:')
         for i in range(num):

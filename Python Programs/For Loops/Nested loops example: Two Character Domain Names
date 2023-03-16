@@ -1,14 +1,16 @@
+#Tells the user what the program does
 print('Two-letter domain names:')
 
+#Declares the first letter with 'a' and the second with '?'
 letter1 = 'a'
 letter2 = '?'
-while letter1 <= 'z':  # Outer loop
-    letter2 = 'a'
-    while letter2 <= 'z':  # Inner loop
-        print(f'{letter1}{letter2}.com')
-        letter2 = chr(ord(letter2) + 1)
-    digit = 0
-    while digit <= 9:
-        print('%s%d.com' % (letter1, digit))
-        digit += 1
-    letter1 = chr(ord(letter1) + 1)
+while letter1 <= 'z':  # Outer loop, while the first letter is less than or equal to z, the loop will continue
+    letter2 = 'a' #Updates the second letter with 'a'
+    while letter2 <= 'z':  # Inner loop, while the second letter is less than or equal to z, the loop will continue
+        print(f'{letter1}{letter2}.com') #Prints the first and second letters together then adds .com
+        letter2 = chr(ord(letter2) + 1) #Updates the second letter to the next value, 'b', 'c', etc
+    digit = 0 #Adds the option for digits to be used, 0-9
+    while digit <= 9: #While the digit value is less than or equal to 9, the loop will continue
+        print('%s%d.com' % (letter1, digit)) #Replaces the placeholders, %s%d with the values of letter1 & digit respectively. %d must be used as digit is an integer
+        digit += 1 #Updates the value of digit by 1
+    letter1 = chr(ord(letter1) + 1) #Updates the first letter to the next value, 'b', 'c', etc

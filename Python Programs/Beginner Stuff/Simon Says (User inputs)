@@ -1,11 +1,14 @@
-user_score = 0
+#Gets user inputs for their pattern and Simon's pattern, as well as initializes the user_score variable
 simon_pattern = input("What is Simon's pattern? ")
 user_pattern  = input("What is your pattern? ")
+user_score = 0
 
+#For every char in the range of Simon's pattern, the if-else statement will run
 for char in range(len(simon_pattern)):
-    if user_pattern[char] == simon_pattern[char]:
+    if user_pattern[char] == simon_pattern[char]: #If the characters are equal, update user_score by 1.
         user_score += 1
-    else:
+    else: #If the characters are not equal, break and end the loop.
         break
 
+#Prints the user score and the value of user_score
 print('User score:', user_score)

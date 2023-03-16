@@ -1,8 +1,11 @@
+#Declares the value of the total_owls variable with 0
 total_owls = 0
 
+#Gets user input for num_owls_A & num_owls_B
 num_owls_A = input()
 num_owls_B = input()
 
+#Updates total_owls with the sum of num_owls_A and num_owls_B. The int before each variable changes their type to an integer. This can be done when the values are declared by int(input())
 total_owls = int(num_owls_A) + int(num_owls_B)
 
 print(f'Number of owls: {total_owls}')

@@ -1,5 +1,7 @@
+//Imports a scanner to let us get user inputs
 import java.util.Scanner;
 
+//Creates the function Salary
 public class Salary {
     public static void main (String [] args) {
         Scanner scnr = new Scanner(System.in);

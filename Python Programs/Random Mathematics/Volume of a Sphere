@@ -1,8 +1,11 @@
+#Imports the math class for more functions
 import math
 
+#Declares pi with the default value of math.pi, sphere_volume with 0.0, and asks the user for the radius of the sphere
 pi = math.pi
 sphere_volume = 0.0
 sphere_radius = int(input("What is the radius of the sphere? "))
 
+#Updates sphere_volume with (4.0 / 3.0) multiplied by (pi * sphere_radius to the power of 3)) then prints it with 2 decimal places
 sphere_volume = (4.0 / 3.0) * (pi * (sphere_radius ** 3))
 print(f'Sphere volume: {sphere_volume:.2f}')

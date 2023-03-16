@@ -1,7 +1,10 @@
+#Declares the current time
 current_time = '2023-03-13 05:50:18:'
 
+#Asks the user for their city and state
 my_city = input("What is the name of your city? ")
 my_state = input("What is the name of your state? ")
 
+#Updates log_entry with the current time, a space, the user's city, a comma, and then their state
 log_entry = current_time + " " + my_city + ", " + my_state
 print(log_entry)

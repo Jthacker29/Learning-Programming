@@ -1,7 +1,10 @@
+#Declares the hotel rate variable with 150
 hotel_rate = 150
 
+#Gets user input for how many years they have been married
 num_years = int(input('Enter years married: '))
 
+#If the users have been married for 50 years, prints "Congratulations on 50 years of marriage!" and sets the hotel rate to half of its current value
 if num_years == 50:
    print('Congratulations on 50 years of marriage!')
    hotel_rate = hotel_rate / 2

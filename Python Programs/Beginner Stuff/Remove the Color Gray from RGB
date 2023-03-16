@@ -3,20 +3,20 @@ red = int(input("What is the value of red? "))
 green = int(input("What is the value of green? "))
 blue = int(input("What is the value of blue? "))
 
-#If the value of red is less than green and blue
+#If the value of red is less than green & blue, the smallestValue is assigned as red, and is then subtracted from the RGB values and they are then printed.
 if (red < green) and (red < blue):
     smallestValue = red
     red = red - smallestValue
     green = green - smallestValue
     blue = blue - smallestValue
     print(red, green, blue)
-elif (green < red) and (green < blue):
+elif (green < red) and (green < blue): #Follows the same rules as above, but for green as the smallestValue
     smallestValue = green
     red = red - smallestValue
     green = green - smallestValue
     blue = blue - smallestValue
     print(red, green, blue)
-else:
+else: #Follows the same rules as above, though does not need to test if blue is less as the other two statements tested the values already
     smallestValue = blue
     red = red - smallestValue
     green = green - smallestValue

@@ -1,12 +1,19 @@
+#Imports the math class for more functions to be available
 import math
 
+#Gets the user to input three floats (decimals)
 x = float(input())
 y = float(input())
 z = float(input())
 
+#Assigns xToZ with x to the power of z
 xToZ = math.pow(x, z)
+#Assigns xToY with x to the power of y to the power of z
 xToY = math.pow(x, math.pow(y, z))
+#Assigns absVal with the absolute value of x - y
 absVal = math.fabs(x - y)
+#Assigns sqrRoot with the square root of x to the power of z
 sqrRoot = math.sqrt(xToZ)
 
+#Prints the four variables with 2 decimal places
 print(f'{xToZ:.2f} {xToY:.2f} {absVal:.2f} {sqrRoot:.2f}')

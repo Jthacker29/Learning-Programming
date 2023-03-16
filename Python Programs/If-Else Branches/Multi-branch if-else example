@@ -1,12 +1,14 @@
+#Gets the user value for the number of years married
 num_years = int(input('Enter number years married: '))
 
+#If they have been married for 1 year, prints "Your first year -- great!"
 if num_years == 1:
     print('Your first year -- great!')
-elif num_years == 10:
+elif num_years == 10: #Prints "A whole decade -- impressive!" if they have been married for 10 years
     print('A whole decade -- impressive.')
-elif num_years == 25:
+elif num_years == 25: #Prints "Your silver anniversary -- enjoy!" if they have been married for 25 years
     print('Your silver anniversary -- enjoy.')
-elif num_years == 50:
+elif num_years == 50: #Prints "Your golden anniversary -- amazing!" if they have been married for 50 years
     print('Your golden anniversary -- amazing.')
-else:
+else: #Prints "Nothing special." if their years married is not equal to any of the values above.
     print('Nothing special.')

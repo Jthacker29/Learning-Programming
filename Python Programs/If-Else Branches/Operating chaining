@@ -1,4 +1,7 @@
+#Gets the user to input their grade
 user_grade = int(input())
+
+#If the users grade is greater than 9 and less than 12, print "in high school", otherwise print "not in high school"
 if 9 <= user_grade <= 12:
     print('in high school')
 else:

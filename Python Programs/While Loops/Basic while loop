@@ -1,9 +1,11 @@
+#Assings curr_power with 2 and user_char with 'Y'
 curr_power = 2
 user_char = 'Y'
 
+#While the user_char is 'Y' the loop will continue
 while user_char == 'Y':
-    print(curr_power)
-    curr_power = curr_power * 2
-    user_char = input("Enter Y to continue doubling the value, any other value will end. ")
+    print(curr_power) #Prints the current power every iteration
+    curr_power = curr_power * 2 #Updates curr_power with curr_power * 2 every iteration
+    user_char = input("Enter Y to continue doubling the value, any other value will end. ") #Gets a new input every iteration, allowing the user to enter a character that isn't 'Y' to end the loop
 
 print('Done')

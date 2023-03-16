@@ -1,21 +1,24 @@
 import random  # Import a library to generate random numbers
 
+#Preps the user for the next input
 print('Tell me something about yourself.')
 print('You can type \'Goodbye\' at anytime to quit.\n')
 
+#Gets the user input as mentioned above
 user_text = input()
 
+#While the user's input is NOT 'Goodbye' continue the loop
 while user_text != 'Goodbye':
-    random_num = random.randint(0, 2)  # Gives a random integer between 0 and 2
-    if random_num == 0:
+    random_num = random.randint(0, 2)  #Generates a random integer between 0 and 2 every iteration
+    if random_num == 0: #If the random number was 0, print "Please explain further"
         print('\nPlease explain further.\n')
-    elif random_num == 1:
+    elif random_num == 1: #If the random number was 1, print "Why do you say: " followed by the user's input
         print(f"\nWhy do you say: '{user_text}'?\n")
-    elif random_num == 2:
+    elif random_num == 2: #If the random number was 2, print "What else can you share?"
         print('\nWhat else can you share?\n')
-    else:
+    else: #If the random number was anything but 0, 1, or 2, print "Uh-oh, something went wrong. Try again"
         print('\nUh-oh, something went wrong. Try again.\n')
 
-    user_text = input()
+    user_text = input() #Asks the user for a new input every iteration
 
-print('It was nice talking with you. Goodbye.\n')
+print('It was nice talking with you. Goodbye.\n') #Prints goodbye when the loop is complete, aka 'Goodbye' has been reached

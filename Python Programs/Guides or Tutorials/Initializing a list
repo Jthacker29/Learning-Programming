@@ -1,5 +1,7 @@
+#Creates a list with the values "Gus", "Bob", and "Zoe"
 short_names = ["Gus", "Bob", "Zoe"]
 
+#Prints the values at the specified indexes 
 print(short_names[0])
 print(short_names[1])
 print(short_names[2])

@@ -1,9 +1,12 @@
+#Creates an empty list called listNums
 listNums = []
 
+#While the statement is true, it will run, ends when userNums is less than or equal to 0 as it will break the loop.
 while True:
-    userNums = int(input("Enter your numbers, use zero or a negative to end: "))
+    userNums = int(input("Enter your numbers, use zero or a negative to end: ")) #Gets user input for their numbers, allows them to enter a zero or a negative to end the loop
     if userNums <= 0:
         break
-    listNums.append(userNums)
-    
+    listNums.append(userNums) #Adds the user input to the list
+
+#Prints the smallest number from the list using the min(listNums) function and the largest with max(listNums)
 print(min(listNums), "and", max(listNums))

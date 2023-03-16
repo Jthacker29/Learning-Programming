@@ -1,4 +1,6 @@
+#Assigns stock_prices with the user inputs, allows them to give multiple though pressing enter will end inputs.
 stock_prices = input("What are the stock prices? ").split()
 
+#Prints every user input from the stock_prices list.
 for price in stock_prices:
     print('$', price)

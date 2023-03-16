@@ -1,5 +1,7 @@
+#Gets the user to input their age
 user_age = int(input())
 
+#If the user age is greater than 18 and less than 25 print "Eligible" and print "Ineligible" if it is less than 18 or greater than 25
 if (user_age >= 18) and (user_age <= 25):
     print('Eligible')
 else:

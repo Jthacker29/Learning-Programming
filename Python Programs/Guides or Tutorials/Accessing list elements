@@ -1,9 +1,12 @@
+#Declares the variables with the value of the cars
 lamborghini_veneno = 3900000  # $3.9 million!
 bugatti_veyron = 2400000      # $2.4 million!
 aston_martin_one77 = 1850000  # $1.85 million!
 
+#Creates a list called prices with the car variables
 prices = [lamborghini_veneno, bugatti_veyron, aston_martin_one77]
 
+#Prints the car name, and it's position in the list
 print('Lamborghini Veneno:', prices[0], 'dollars')
 print('Bugatti Veyron Super Sport:', prices[1], 'dollars')
 print('Aston Martin One-77:', prices[2], 'dollars')

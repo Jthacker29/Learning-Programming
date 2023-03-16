@@ -1,6 +1,7 @@
+#Declares the my_nums list with 5, 12, and 20 then prints it
 my_nums = [5, 12, 20]
 print(my_nums)
 
-# Update a list element
+#Updates the list index at 1 with -28, meaning 12 becomes -28.
 my_nums[1] = -28
 print(my_nums)

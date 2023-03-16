@@ -1,7 +1,9 @@
+#Gets user input for a number, assigns the float_variable with the original number converted into a float, and does the same for converting it into an integer
 input_text = input('Enter a number:\n')
 float_variable = float(input_text)
 int_variable = int(float_variable)
 
+#Prints the original input, then the text converted into a float, and then it converted into an integer
 print('original input text:', input_text)
 print('input text converted to a float:', float_variable)
 print('float variable converted to an int:', int_variable)

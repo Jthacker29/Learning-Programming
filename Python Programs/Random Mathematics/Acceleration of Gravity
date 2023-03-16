@@ -1,7 +1,11 @@
+#Assigns G with the gravitational constant and M with the mass of the field source
 G = 6.673e-11
 M = 5.98e24
+
+#Initializes accel_gravity with the value 0.0, then gets the user input for the distance from the center
 accel_gravity = 0.0
 dist_center = float(input())
 
+#Updates accel_gravity with gravitational constant * mass, then divided by the distance to the center squared.
 accel_gravity = (G * M) / (dist_center ** 2)
 print(f'Acceleration of gravity: {accel_gravity:.2f}')
