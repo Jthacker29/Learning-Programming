@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TypeCasting {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    //Initializes the variables as integers, and a double for the average
+    int numKidsA;
+    int numKidsB;
+    int numKidsC;
+    int numFamilies;
+    double avgKids;
+
+    //Get the next user inputs for the following variables
+    numKidsA = scnr.nextInt();
+    numKidsB = scnr.nextInt();
+    numKidsC = scnr.nextInt();
+    numFamilies = scnr.nextInt();
+
+    //Using the (double) type cast we can convert the integer into a double on the fly, allowing for more accurate calculations
+    avgKids = (double)(numKidsA + numKidsB + numKidsC) / (double)(numFamilies);
+
+    System.out.println(avgKids);
+   }
+}

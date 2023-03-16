@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Prefix {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+        int userPhoneNumber;
+        int tmpVal;
+        int prefixNum;
+
+        System.out.println("What is your phone number? (Do not include hyphens)");
+        userPhoneNumber = scnr.nextInt();
+
+        tmpVal = userPhoneNumber / 10000; //Dividing by 1000 shifts by 4 digits, so 136555.
+        prefixNum = tmpVal % 1000; //Modulo 100 gets the right 3 digits, so 555.
+    }
+}

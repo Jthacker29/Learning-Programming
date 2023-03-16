@@ -1,0 +1,20 @@
+public class CharArrow {
+   public static void main(String[] args) {
+    //Initializes the variables arrowBody and arrowHead as characters.
+    char arrowBody;
+    char arrowHead;
+
+    //Assigns them with character literals.
+    arrowBody = '-';
+    arrowHead = '>';
+
+    //Prints the arrowhead, then a full arrow.
+    System.out.println(arrowHead);
+    System.out.println("" + arrowBody + arrowBody + arrowBody + arrowHead);
+
+    //Changes the body to 'o' and prints a full arrow
+    arrowBody = 'o';
+
+    System.out.println("" + arrowBody + arrowBody + arrowBody + arrowHead);
+   }
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TimeConverter {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    int userMinutes; // User input: Minutes
+    int outHours;    // Output hours
+    int outMinutes;  // Output minutes (remaining)
+
+    //Gets the user input for minutes and assigns it to userMinutes
+    System.out.print("Enter minutes: ");
+    userMinutes = scnr.nextInt();
+
+    //Updates outHours with userMinutes divided by 60. Does not include the remainder
+    outHours   = userMinutes / 60;
+    //Updates outMinutes with userMinutes modulo 60. Takes only the remainder (or 0 if there is no remainder)
+    outMinutes = userMinutes % 60;
+
+    //Prints the original amount of minutes and how many hours and minutes it converted to
+    System.out.print(userMinutes  + " minutes is ");
+    System.out.print(outHours     + " hours and ");
+    System.out.println(outMinutes + " minutes.");
+   }
+}

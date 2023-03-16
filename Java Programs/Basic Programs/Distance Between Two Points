@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class CoordinateGeometry {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    //Initializes variables for the points we will be comparing as well as the distances.
+    double x1;
+    double y1;
+    double x2;
+    double y2;
+    double pointsDistance;
+    double xDist;
+    double yDist;
+
+    //Assigns 0.0 to pointsDistance, xDist, and yDist
+    pointsDistance = 0.0;
+    xDist = 0.0;
+    yDist = 0.0;
+
+    //Gets the next user inputs for x1, y1, x2, and y2.
+    x1 = scnr.nextDouble();
+    y1 = scnr.nextDouble();
+    x2 = scnr.nextDouble();
+    y2 = scnr.nextDouble();
+
+    //Assigns point distance with the result of the distance equation then prints the pointsDistance value.
+    pointsDistance = Math.sqrt(Math.pow((x2 - x1), 2.0) + Math.pow((y2 - y1), 2.0));
+
+    System.out.println(pointsDistance);
+   }
+}

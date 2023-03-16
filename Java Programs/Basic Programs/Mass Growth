@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class MassGrowth {
+   public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    double initMass;   // Initial mass of a substance
+    double growthRate; // Annual growth rate
+    double yearsGrow;  // Years of growth
+    double finalMass;  // Final mass after those years
+
+    //Gets the users input for the initial mass and assigns it to initMass
+    System.out.print("Enter initial mass: ");
+    initMass = scnr.nextDouble();
+
+    //Gets the users input for the growth rate in a perfect and assigns it to growthRate
+    System.out.print("Enter growth rate (Ex: 0.05 is 5%/year): ");
+    growthRate = scnr.nextDouble();
+
+    //Gets the users input for the years of growth and assigns it to yearsGrow
+    System.out.print("Enter years of growth: ");
+    yearsGrow = scnr.nextDouble();
+
+    //Updates finalMass
+    finalMass = initMass * Math.pow(1.0 + growthRate, yearsGrow);
+      // Ex: Rate of 0.05 yields initMass * 1.05^yearsGrow
+   
+    //Prints " Final after (yearsGrow) years is: (finalMass)"
+    System.out.print(" Final mass after " + yearsGrow);
+    System.out.println(" years is: " + finalMass);
+   }
+}

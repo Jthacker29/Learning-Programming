@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CalcSquareSide {
+ public static void main(String[] args) {
+    Scanner scnr = new Scanner(System.in);
+    //Initializes sideSquare & areaSquare
+    double sideSquare;
+    double areaSquare;
+
+    //Gets the user input for the number they want the square root of and assigns it to areaSquare
+    System.out.println("Enter the number you want to find the square root of: ")
+    areaSquare = scnr.nextInt();
+    //Updates sideSquare with the square root of areaSquare using the math.sqrt() method
+    sideSquare = Math.sqrt(areaSquare);
+
+    System.out.print("Square root of " + areaSquare);
+    System.out.println(" is " + sideSquare);
+    //Other math methods include Math.pow(x, y) to find x to the power of y, and Math.abs(x) to find absolute value
+ }
+}
