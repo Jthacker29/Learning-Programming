@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+void favoriteNum(int x) {
+    cout << "My favorite number is " << x << "." << endl;
+}
+
+int main()
+{
+    favoriteNum(5);
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x;
+    int y;
+    int z;
+
+    cout << "Enter a number." << endl;
+    cin >> x;
+
+    cout << "Enter a second number." << endl;
+    cin >>y;
+
+    cout << "Enter a third number." << endl;
+    cin >>z;
+
+    int sum = x + y + z
+    cout << "The sum of your numbers is " << sum << "." << endl;
+
+    int product = x * y * z
+    cout << "The product of your numbers is " << product << "." << endl;
+
+    int average = sum / 3;
+    cout << "The average of your numbers is " << average << "." << endl;
+}

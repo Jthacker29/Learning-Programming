@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    if(3 == 3) {
+        cout << "You are awesome!" << endl;
+    }
+
+    return 0;
+}
