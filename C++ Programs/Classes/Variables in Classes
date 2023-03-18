@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class JacobsClass{
+public:
+    void changeName(string x) {
+        name = x;
+    }
+    string getName() {
+        return name;
+    }
+private:
+    string name;
+};
+
+int main()
+{
+    JacobsClass jacobsObject;
+    jacobsObject.changeName("Jacob Thacker");
+    cout << jacobsObject.getName();
+    return 0;
+}
