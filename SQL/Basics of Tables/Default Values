@@ -1,0 +1,34 @@
+/* Columns may be omitted from an INSERT statement. When omitted, a column is
+assigned a NULL value. If the NOT NULL constraint is specified, the insert is rejected
+Alternatively, a default value may be specified for a column. The optional DEFAULT
+keyword and default value follow the column name and data type in a CREATE TABLE
+statement. The column is assigned the default value, rather than NULL, when omitted
+from an INSERT statement. */
+
+CREATE TABLE Employee (
+    ID SMALLINT unsigned,
+    EmployeeName VARCHAR(60),
+    BirthDate DATE DEFAULT '2000-01-01',
+    Salary DECIMAL(7, 2) DEFAULT 0.00
+);
+
+/* The above assigns defaults for the BirthDate and Salary columns. 2000-01-01 is the
+respective default of BirthDate, and 0.00 is the default for Salary. */
+
+INSERT Employee (ID, BirthDate, Salary)
+VALUES (6381, '1970-12-01', 980.00);
+
+/* The above would create a new row with the ID 6381, the birth date 1970-12-01, and the salary 980.00.
+Considering that the name section was not given a default, it would be given the NULL value. */
+
+INSERT INTO Employee (ID, EmployeeName, Salary)
+VALUES (2538, 'Lisa Ellison', 423.00)
+
+/* The above would create a new row with the ID 2538, the birth date would be defaulted to 2000-01-01
+The name would be Lisa Ellison and the salary would be 423.00. */
+
+INSERT INTO Employee (ID, EmployeeName, BirthDate)
+VALUES (5384, 'Sam Snead', '2000-10-31')
+
+/* The above would create a new row with the ID 5384, the employee name would be Sam Snead
+The birth date would be 2000-10-31, while the salary would be defaulted to 0.0 */

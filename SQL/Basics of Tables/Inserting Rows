@@ -1,0 +1,30 @@
+/* The INSERT statement adds rows to a table. The INSERT statement has two clauses
+The INSERT INTO clause names the table and the columns where data is to be added (Keyword INTO optional)
+The VALUES clause specifies the column values to be added. In the example below the TableName is to be
+replaced by the table that we are updating. The Column1, Column2, section is name of the olumns
+we wish to update, which use the values from the Value1, Value2, etc section.. */
+
+INSERT [INTO] TableName (Column1, Column2, etc)
+VALUES (Value1, Value2, etc)
+
+INSERT INTO Employee (ID, EmployeeName, Salary)
+VALUES (2538, 'Lisa Ellison', 45000);
+
+/* In the above example, the new row would have 2538 in the ID column
+'Lisa Ellison' in the EmployeeName column, and 45000 in the Salary column */
+
+INSERT INTO Employee
+VALUES (2538, 'Lisa Ellison', 45000)
+
+/* The same follows for the above example, in this case so long as the values 
+match the columns order they will be updated as needed. */
+
+INSERT INTO Employee
+VALUES (6381, 'Maria Rodriguez', 92300),
+       (7920, 'Jiho Chen', 56000),
+      (9385, 'Alexis Parsons', 32000);
+
+/* In the above example, we do not declare the columns we are using, though
+the program will interpret which need to be updated. This will create three
+new rows with the values above. Following this example we can add as many rows
+as we need when updating rows */
