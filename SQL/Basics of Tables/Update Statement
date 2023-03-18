@@ -1,0 +1,23 @@
+/* The UPDATE statement modifies existing rows in a table. The UPDATE statement
+uses the SET clause to specify the new column values. An optional WHERE clause
+specifies which rows are updated. Omitting the WHERE clause results in all rows being updated.
+TableName is replaced by the table you wish to update. Column1 & Column2 are replaced by the 
+values from Value1 & Value2. Condition is replaced by whatever you wish to update if the 
+requirements are met. */
+
+UPDATE TableName
+SET Column1 = Value1, Column2 = Value2, etc
+WHERE Condition;
+
+UPDATE Employee
+SET Name = 'Tom Snead',
+    BirthDate = '2000-03-15'
+WHERE ID = 5384;
+
+/* The above would update the Name to Tom Snead and the birth date to 2000-03-15 in any row
+where the ID is 5384. */
+
+UPDATE Employee
+SET Salary = 42000;
+
+/* The above would update the salary in EVERY existing row with 42000. */
