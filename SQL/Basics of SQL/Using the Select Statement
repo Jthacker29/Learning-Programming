@@ -1,0 +1,33 @@
+/* The select statement allows us to select rows from a table. The statement has a SELECT clause and a FROM clause.
+The FROM clause specifies the table from which rows are selected. The SELECT clause specifies one or more expressions
+separated by commas, that determine what values are returned from each row. */
+
+SELECT Expression1, Expression2
+FROM TableName;
+
+/* We can also select with columns */
+
+SELECT Column1, Column2
+FROM TableName;
+
+/* By using the * (asterisk) to select we can return a whole table. */
+
+SELECT *
+FROM TableName;
+
+/* The SELECT statement always returns a set of rows (assuming you called for one properly or a row met your requirements) 
+this information is assembled into a table called the RESULT TABLE There are some cases where a table is too long or has too
+much information (rows), in this event we can use the LIMIT clause to limit the number of rows returned by our SELECT clause
+the following example will only return 100 rows no matter how large the table may be. */
+
+SELECT *
+FROM City
+LIMIT 100;
+
+/* We can take this further with the use of the WHERE clause. By using the WHERE clause we can return a select column from any
+table given that it meets all of the requirements. The following example will only return rows that have a population of less
+than 150000. */
+
+SELECT *
+FROM City
+WHERE Population < 150000;

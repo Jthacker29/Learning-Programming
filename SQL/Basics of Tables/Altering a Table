@@ -1,0 +1,19 @@
+ALTER TABLE Employee
+    ADD Salary DECIMAL(7, 2);
+
+/* The ALTER TABLE statement adds, deletes, or modifies a column on an existing table.
+Above is an example of adding a new column Salary, which takes decimals with 7 digits 
+and up to 2 behind the decimal. */
+
+/* Below is an example of changing an existing column. The first part should be CHANGE
+or the action you wish to take, next is the current column name, followed by the new
+name and then the data type. */
+
+ALTER TABLE Employee
+    CHANGE Salary AnnualSalary INT;
+
+/* Below is an example of dropping an existing column. This will drop the column
+AnnualSalary and leave everything else unchanged. */
+
+ALTER TABLE Employee
+    DROP AnnualSalary;

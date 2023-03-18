@@ -1,0 +1,11 @@
+CREATE TABLE Employee (
+    ID INT,
+    EmployeeName VARCHAR(60),
+    BirthDate DATE,
+    Salary DECIMAL(7, 2)
+);
+
+/* INT stores integer values, 
+VARCHAR(N) stores textual values with 0 to N characters, 
+DECIMAL(M, D) stores fractional numbers with M digits and D digits following the decimal point, 
+DATE stores year, month, & day. */

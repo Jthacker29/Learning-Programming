@@ -1,0 +1,15 @@
+CREATE TABLE Product (
+   ID INTEGER unsigned, /* This creates a column called ID with the integer data type, though unsigned causes the range to be 0 - 65,535 */
+   Name VARCHAR(40), /* Creates a variable-length string called Name with a maximum of 40 characters */
+   ProductType CHAR(3), /* Creates a fixed-length string called ProductType with 3 characters */
+   OriginDateTime DATETIME, /* Creates a column called OriginDateName with the DATETIME type that has year, month, day, and time. */
+   Weight FLOAT /* Creates a decimal number with variable precision with 4 bytes of storage */
+);
+
+INSERT INTO Product (ID, Name, ProductType, OriginDateTime, Weight) VALUES 
+  (100, 'Tricorder', 'COM', '2020-08-11 11:30:00', 2.4172),
+  (200, 'Food replicator', 'FOD', '2020-09-21 14:00:00', 54.02),
+  (300, 'Cloaking device', 'SPA', '2019-02-04 07:35:00', 19257.9);
+
+SELECT *
+FROM Product;
