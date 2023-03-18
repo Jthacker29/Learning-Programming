@@ -1,0 +1,23 @@
+/* The DELETE statement deletes existing rows in a table. The FROM keyword
+is followed by the table name whose rows are to be deleted. An optional WHERE
+clause specifies which rows should be deleted. Omitting the WHERE clause
+results in all rows in the table being deleted. 
+The below example deletes rows from TableName where the condition is met*/
+
+DELETE FROM TableName
+WHERE condition;
+
+DELETE FROM Employee
+WHERE ID = 6381;
+
+/* The above will delete the rows with the ID 6381. */
+
+DELETE FROM Employee
+WHERE Salary > 40000 AND
+      Salary < 80000;
+
+/* The above will delete rows where the salary is between 40000 and 80000. */
+
+DELETE FROM Employee;
+
+/* The above will delete all of the employee rows. */
