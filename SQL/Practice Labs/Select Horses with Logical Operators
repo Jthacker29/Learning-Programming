@@ -1,0 +1,8 @@
+SELECT RegisteredName, Height, BirthDate
+FROM Horse
+WHERE (Height >= '15.0' AND Height <= '16.0') 
+   OR BirthDate >= '2020-01-01';
+
+/* This will return the Registered Name, Height, and Birth Date of horses
+that have a height between 15.0 & 16.0 OR have a birth date that is on or
+after January 1, 2020. */
