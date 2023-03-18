@@ -1,0 +1,16 @@
+/* When arithmetic or comparison operators have one or more NULL operands the result is NULL
+When a WHERE clause evaluates to NULL for values in a row, the row is not selected. */
+
+SELECT Name
+FROM Compensation
+WHERE (Salary + Bonus) > 30000;
+
+/* The above would not return a value that has a NULL value in Salary, or Bonus. 
+It would still return all others. */
+
+SELECT Name
+FROM Compensation
+WHERE BirthDate = NULL;
+
+/* Though you are asking for a row to be returned if it equals NULL, nothing would be returned
+considering that NULL is not allowed to be returned whatsoever */

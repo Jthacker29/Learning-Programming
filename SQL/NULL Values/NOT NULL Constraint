@@ -1,0 +1,13 @@
+/* The NOT NULL constraint prevents a column from having a NULL value
+Statements that insert NULL, or update a value to NULL, are automatically rejected
+NOT NULL follows the column name and data type in a CREATE TABLE statement. */
+
+CREATE TABLE Employee (
+    ID SMALLINT unsigned,
+    EmployeeName VARCHAR(60) NOT NULL,
+    BirthDate DATE,
+    Salary DECIMAL(7, 2)
+);
+
+/* The above would reject all inserts or updates that are NULL in the
+EmployeeName column or category. */
