@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    return 0;
+}
+
+void PrintThings() {
+    cout << "Let's make a sandwich!" << endl;
+    cout << "1st. Get your ingredients and tools (bread, meat, butterknife, etc)." << endl;
+    cout << "2nd. Start with two slices of bread (or more)." << endl;
+    cout << "3rd. If you want mustard, mayo, or another condiment apply it to each slice with your butterknife." << endl;
+    cout << "4th. Next, add your cheese if you want any to one of your slices." << endl;
+    cout << "5th. Take the meat that you want, such as turkey, and add three pieces to one of your slices." << endl;
+    cout << "6th. Now put the other slice of bread ontop of the stack and complete you sandwich." << endl;
+    cout << "Enjoy your sandwich!" << endl;
+}

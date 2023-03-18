@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+class JacobsClass{
+    public:
+        void PrintThings() {
+            cout << "Testing, testing, 1... \n 2... \n 3..." << endl;
+        }
+};
+
+int main()
+{
+    JacobsClass jacobsObject;
+    jacobsObject.PrintThings();
+    return 0;
+}
