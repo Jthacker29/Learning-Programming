@@ -1,0 +1,17 @@
+/* As we mentioned in the NULL Comparisons section, we cannot return values that equate to NULL or have NULL in any of their operands
+Instead, we must use the IS NULL and the IS NOT NULL operators. When we use these we can select NULL values. For example if we have
+Value IS NULL, it would return true when the value is NULL. Value IS NOT NULL returns true when the value is NOT NULL. */
+
+SELECT *
+FROM Country
+WHERE IndepYear IS NULL;
+
+/* The above would return rows where there is a NULL value in
+the IndepYear column from the Country table. */
+
+SELECT *
+FROM Country
+WHERE Population IS NOT NULL;
+
+/* The above would return rows where there are NOT NULL values in the 
+Population column from the Country table. */
