@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    cout << "How old are you? ";
+    cin >> age;
+
+    if(age >= 60){
+        if(age >= 100){
+                cout << "Dang, over a whole century!" << endl;
+        } else {
+            cout << "That's pretty old." << endl;
+        }
+    } else {
+        cout << "You're still young." << endl;
+    }
+
+    return 0;
+}
