@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int userLength;
+    cout << "How many numbers will you enter? (Arrays start from 0, but the program accounts for it) " << endl;
+    cin >> userLength;
+
+    userLength -= 1;
+    int numbers[userLength];
+
+    cout << "\nCreating an Array of User Numbers\n" << endl;
+
+    for (int x = 0; x <= userLength; x++) {
+        int userVal;
+        cout << "Enter a number... ";
+        cin >> userVal;
+
+        numbers[x] = userVal;
+    }
+
+    cout << "\nElement - Value\n" << endl;
+
+    for (int x = 0; x <= userLength; x++) {
+        cout << x << "   -----   " << numbers[x] << endl;
+    }
+}
