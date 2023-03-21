@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age = 20;
+
+    switch(age) {
+    case 16:
+        cout << "Old enough to drive." << endl;
+        break;
+    case 18:
+        cout << "Old enough to buy a lottery ticket." << endl;
+        break;
+    case 21:
+        cout << "Old enough to drink." << endl;
+        break;
+    default:
+        cout << "Boring age, just a birthday." << endl;
+    }
+}
