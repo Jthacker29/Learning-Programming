@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void printNumber(int x) {
+    cout << "I am printing an integer: " << x << endl;
+}
+
+void printNumber(float y) {
+    cout << "I am printing a float: " << y << endl;
+}
+
+int main()
+{
+    int x = 18;
+    float y = 75.10;
+
+    printNumber(x);
+    printNumber(y);
+}
