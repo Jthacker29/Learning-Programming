@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+double volume(double length=1, double width=1, double height=1);
+
+double l;
+double w;
+double h;
+
+int main()
+{
+    cout << "Enter the length, width, and height in that order, if nothing is inputted it will default to 1." << endl;
+    cin >> l;
+    cin >> w;
+    cin >> h;
+
+    cout << "The volume is: " << volume(l, w, h) << endl;
+}
+
+double volume(double length, double width, double height) {
+    return length*width*height;
+}
