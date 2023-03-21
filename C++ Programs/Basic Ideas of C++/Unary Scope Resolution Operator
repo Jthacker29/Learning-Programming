@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int x = 20;
+
+int main()
+{
+    int x = 10;
+    cout << ::x << endl;
+}
+//Data types can change such as the first being int x = 20 and the second being double x = 10.2
