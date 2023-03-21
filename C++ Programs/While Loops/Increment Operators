@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 20;
+    cout << x++ << endl;
+    //x++ increments the value of the variable x after the current statement runs
+    cout << x << endl;
+    
+    int x = 20;
+    cout << ++x << endl;
+    //++x increments the value of the variable x before the current statement runs
+    cout << x << endl;
+}
