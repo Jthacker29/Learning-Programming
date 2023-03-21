@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Calculator {
+private:
+    int operation;
+    float firstNum;
+    float secondNum;
+    float result;
+
+public:
+    void setCalculator(int op, float x, float y) {
+        operation = op;
+        firstNum = x;
+        secondNum = y;
+    }
+
+    float findResult(){
+        if (operation == 1) {
+            result = firstNum + secondNum;
+        } else if(operation == 2){
+            result = firstNum - secondNum;
+        } else if(operation == 3){
+            result = firstNum * secondNum;
+        } else if(operation == 4){
+            result = firstNum / secondNum;
+        }
+        return result;
+    }
+};
+
+int main()
+{
+    int op;
+    float x, y, outcome;
+    cout << "What operation do you want to perform? (1 for addition, 2 for subtraction, 3 for multiplication, 4 for division)" << endl;
+    cin >> op;
+
+    if(op < 1 || op > 4) {
+       cout << "Improper operation..." << endl;
+    } else {
+        cout << "What is your first number?" << endl;
+        cin >> x;
+        cout << "What is your second number?" << endl;
+        cin >> y;
+        Calculator printResult;
+        printResult.setCalculator(op, x, y);
+
+        outcome = printResult.findResult();
+        cout << "Your result is " << outcome << "." << endl;
+    }
+    return 0;
+}
