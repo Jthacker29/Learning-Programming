@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int age;
+    cout << "How old are you?" << endl;
+    cin >> age;
+
+    int cash;
+    cout << "How much money do you have?" << endl;
+    cin >> cash;
+
+    if(age > 21 && cash > 500) {
+        cout << "You are allowed in." << endl;
+    } else {
+        cout << "You are not allowed in." << endl;
+    }
+}
