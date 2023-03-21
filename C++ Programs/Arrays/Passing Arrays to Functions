@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void printArray(int testArray[], int sizeOfArray);
+
+int main()
+{
+    int userLength;
+    cout << "How many numbers will your integer hold? ";
+    cin >> userLength;
+    int userArray[userLength];
+
+    for(int i = 0; i < userLength; i++) {
+        int userVal;
+        cout << "Enter a number... ";
+        cin >> userVal;
+        userArray[i] = userVal;
+    }
+    cout << "" << endl;
+    printArray(userArray, userLength);
+}
+
+void printArray(int testArray[], int sizeOfArray){
+    for(int i = 0; i < sizeOfArray; i++){
+        cout << testArray[i] << endl;
+    }
+}
