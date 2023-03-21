@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 1;
+
+    do{
+        cout << x << endl;
+        x++;
+    }while(x <= 10);
+    //Will iterate until x is equal to 10, will output 1 then run the true/false test
+    //Ends up outputting 1-10
+
+    x = 99;
+
+    do {
+        cout << x << endl;
+    }while(x <= 10);
+    //Will iterate until x is equal to 10, will output 99 then run the true/false test.
+    //Becomes false immediately
+}
