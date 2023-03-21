@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int userNumbers;
+    cout << "How many numbers will you be using? ";
+    cin >> userNumbers;
+
+    int calcArray[userNumbers];
+    int sum = 0;
+
+    for(int i = 0; i < userNumbers; i++) {
+        int userVal;
+        cout << "Enter a number... ";
+        cin >> userVal;
+        calcArray[i] = userVal;
+    }
+
+    for(int i = 0; i < userNumbers; i++) {
+        sum += calcArray[i];
+    }
+    cout << "The sum of your numbers is: " << sum << endl;
+}
