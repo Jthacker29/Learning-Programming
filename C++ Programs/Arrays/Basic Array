@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int numbers[10] = {17, 12, 16, 82, 54, 19, 45, 62, 31, 27};
+
+    cout << numbers[0] << endl;
+    //Prints the first number of the array as computers begin counting (the array index) at 0 instead of 1.
+}
