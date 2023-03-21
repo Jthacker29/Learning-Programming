@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x = 5;
+    x *= 10;
+    cout << x << endl;
+    //Outputs 50 since it does 5 * 10
+
+    int y = 10;
+    y += 5;
+    cout << y << endl;
+    //Outputs 15 since it does 10 + 5
+
+    int z = 12;
+    z -= 6;
+    cout << z << endl;
+    //Outputs 6 since it does 12 - 6
+
+    int a = 10;
+    a /= 2;
+    cout << a << endl;
+    //Outputs 5 since it does 10 / 2
+
+    int b = 10;
+    b %= 2;
+    cout << b << endl;
+    //Outputs 0 since it does 10 % 2
+}
