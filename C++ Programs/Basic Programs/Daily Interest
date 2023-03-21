@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    float profit;
+
+    float amountInvested;
+    cout << "How much did you invest initially?" << endl;
+    cin >> amountInvested;
+
+    float rate;
+    cout << "How much interest do you earn each day? (1% is .01, 20% is .20, etc.)" << endl;
+    cin >> rate;
+
+    int lengthOfInvestment;
+    cout << "How long are you investing? (In days)" << endl;
+    cin >> lengthOfInvestment;
+
+    for(int day = 1; day <= lengthOfInvestment; day++){
+        profit = amountInvested * pow(1 + rate, day);
+        cout << day << " ----- " << profit << endl;
+    }
+}
