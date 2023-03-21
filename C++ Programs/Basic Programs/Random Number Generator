@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+    srand(time(0));
+    //Changes the algorithm for the rand() function. Lets us produce different numbers.
+    //Because the time(0) value is ever-changing, a new algorithm will be produced each time it is ran (or every second).
+
+    for(int i = 1; i < 25; i++) {
+        cout << 1 + (rand()%6) << endl;
+        //Produces a random number, we use modulo 6 to ensure that it ends up being 0-5, and by adding 1 we make it 1-6.
+    }
+}
