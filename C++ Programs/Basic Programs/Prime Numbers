@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is prime
+bool isPrime(int userVal) {
+    // Check if the number is less than or equal to 1
+    if(userVal <= 1) {
+        cout << "\nA prime number must be positive and greater than one.";
+        return false;
+    }
+
+    // Check if the number is divisible by any number between 2 and the number itself
+    for(int i = 2; i < userVal; i++) {
+        if(userVal % i == 0) {
+            return false;
+        }
+    }
+    // If the number is not divisible by any number between 2 and itself, it is prime
+    return true;
+}
+
+int main()
+{
+    int userVal;
+    cout << "Enter a number that is positive and greater than one - ";
+    cin >> userVal;
+
+    // Call the isPrime function to check if the number is prime
+    if(isPrime(userVal)) {
+        cout << userVal << " is a prime number!" << endl;
+    } else {
+        cout << userVal << " is not a prime number!" << endl;
+    }
+    return 0;
+}
