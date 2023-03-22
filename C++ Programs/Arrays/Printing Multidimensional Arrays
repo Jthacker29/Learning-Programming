@@ -1,15 +1,48 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int multiArray[2][3] = {{1, 2, 3},{7, 8, 9}};
+// Function to prompt the user for an integer value and return it
+int getIntegerInput(string prompt) {
+    int input;
+    cout << prompt;
+    cin >> input;
+    return input;
+}
 
-    for(int row = 0; row < 2; row++){
+// Function to prompt the user for a value to insert into the array
+int getArrayValue(int row, int col) {
+    int value;
+    cout << "Enter value for element [" << row << "][" << col << "]: ";
+    cin >> value;
+    return value;
+}
 
-        for(int column = 0; column < 3; column++){
-            cout << multiArray[row][column] << "\t";
+// Function to print out the contents of the array
+void printArray(int array[][100], int numRows, int numCols) {
+    for (int row = 0; row < numRows; row++) {
+        for (int col = 0; col < numCols; col++) {
+            cout << array[row][col] << "\t";
         }
         cout << endl;
     }
+}
+
+int main()
+{
+    // Get user input for number of rows and columns
+    int numRows = getIntegerInput("Enter number of rows: ");
+    int numCols = getIntegerInput("Enter number of columns: ");
+
+    // Declare and initialize the array
+    int multiArray[100][100]; // Assumes max size of 100x100
+    for (int row = 0; row < numRows; row++) {
+        for (int col = 0; col < numCols; col++) {
+            multiArray[row][col] = getArrayValue(row, col);
+        }
+    }
+
+    // Print out the array
+    printArray(multiArray, numRows, numCols);
+
+    return 0;
 }
