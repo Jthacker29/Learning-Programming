@@ -4,61 +4,63 @@ using namespace std;
 
 class Calculator {
 private:
-    int operation;
-    float firstNum;
-    float secondNum;
-    float result;
+    int operation;   // Variable to store the operation
+    float firstNum;  // Variable to store the first number
+    float secondNum; // Variable to store the second number
+    float result;    // Variable to store the result
 
 public:
     void setCalculator(int op, float x, float y) {
-        operation = op;
-        firstNum = x;
-        secondNum = y;
+        operation = op;      // Set the operation to the input op
+        firstNum = x;        // Set the first number to the input x
+        secondNum = y;       // Set the second number to the input y
     }
 
     float findResult(){
         if (operation == 1) {
-            result = firstNum + secondNum;
+            result = firstNum + secondNum;  // If operation is addition, add the two numbers
         } else if(operation == 2){
-            result = firstNum - secondNum;
+            result = firstNum - secondNum;  // If operation is subtraction, subtract the two numbers
         } else if(operation == 3){
-            result = firstNum * secondNum;
+            result = firstNum * secondNum;  // If operation is multiplication, multiply the two numbers
         } else if(operation == 4){
-            if (secondNum == 0) {
-                cout << "Error: Cannot divide by zero." << endl;
-                return 0;
-            } else{
-                result = firstNum / secondNum;
-            }
-        } else {
-            cout << "Error: This is an invalid operation." << endl;
-            return 0;
+            result = firstNum / secondNum;  // If operation is division, divide the two numbers
         }
-        return result;
+        return result;  // Return the calculated result
     }
 };
 
 int main()
 {
-    int op;
-    float x, y, outcome;
+    int op;       // Variable to store the operation choice
+    float x, y;   // Variables to store the two input numbers
+    float outcome; // Variable to store the calculated outcome
+
     cout << "What operation do you want to perform? (1 for addition, 2 for subtraction, 3 for multiplication, 4 for division)" << endl;
-    cin >> op;
+    cin >> op;    // Prompt user to enter the operation choice
 
     if(op < 1 || op > 4) {
-       cout << "Improper operation..." << endl;
-    } else {
-        cout << "What is your first number?" << endl;
-        cin >> x;
-        cout << "What is your second number?" << endl;
-        cin >> y;
-        Calculator printResult;
-        printResult.setCalculator(op, x, y);
-
-        outcome = printResult.findResult();
-        if(outcome != 0) {
-            cout << "Your result is " << outcome << "." << endl;
-        }
+        cout << "Improper operation..." << endl; // If the operation choice is not between 1 and 4, print error message and exit
+        return 0;
     }
+
+    cout << "What is your first number?" << endl;
+    cin >> x;   // Prompt user to enter the first number
+
+    cout << "What is your second number?" << endl;
+    cin >> y;   // Prompt user to enter the second number
+
+    if (op == 4 && y == 0) { // Check for division by zero
+        cout << "Division by zero is not allowed..." << endl; // If second number is zero and operation is division, print error message and exit
+        return 0;
+    }
+
+    Calculator printResult;   // Declare an instance of the Calculator class
+    printResult.setCalculator(op, x, y); // Set the operation, first number, and second number in the Calculator object
+
+    outcome = printResult.findResult(); // Calculate the outcome using the Calculator object
+
+    cout << "Your result is " << outcome << "." << endl;  // Print the outcome to the console
+
     return 0;
 }
