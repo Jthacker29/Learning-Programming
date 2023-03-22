@@ -24,7 +24,15 @@ public:
         } else if(operation == 3){
             result = firstNum * secondNum;
         } else if(operation == 4){
-            result = firstNum / secondNum;
+            if (secondNum == 0) {
+                cout << "Error: Cannot divide by zero." << endl;
+                return 0;
+            } else{
+                result = firstNum / secondNum;
+            }
+        } else {
+            cout << "Error: This is an invalid operation." << endl;
+            return 0;
         }
         return result;
     }
@@ -48,7 +56,9 @@ int main()
         printResult.setCalculator(op, x, y);
 
         outcome = printResult.findResult();
-        cout << "Your result is " << outcome << "." << endl;
+        if(outcome != 0) {
+            cout << "Your result is " << outcome << "." << endl;
+        }
     }
     return 0;
 }
