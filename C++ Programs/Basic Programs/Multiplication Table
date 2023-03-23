@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void multiplicationTable(int startVal, int endVal, int multiplyTo) {
+    for(int i = startVal; i <= endVal; i++) {
+        cout << "Multiplication table for " << i << endl;
+        for(int j = 1; j <= multiplyTo; j++) {
+            cout << i << " * " << j << " = " << i * j << endl;
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    int userStart;
+    cout << "What is the start value of your table?" << endl;
+    cin >> userStart;
+    int userEnd;
+    cout << "What is the end value of your table?" << endl;
+    cin >> userEnd;
+    int userMultiply;
+    cout << "What number do you want to multiply to? (5 * 3, to 5 * 10)" << endl;
+    cin >> userMultiply;
+
+    multiplicationTable(userStart, userEnd, userMultiply);
+}
