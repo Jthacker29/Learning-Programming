@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "do while loops": "cpp"
+        "do while loops": "cpp",
+        "multiplication table": "cpp"
     }
 }

@@ -20,8 +20,12 @@ int main()
     cout << "What is the end value of your table?" << endl;
     cin >> userEnd;
     int userMultiply;
-    cout << "What number do you want to multiply to? (5 * 3, to 5 * 10)" << endl;
+    cout << "What number do you want to multiply to? (No more than 100 to prevent overloading the program)" << endl;
     cin >> userMultiply;
+    if(userMultiply > 100){
+        cout << "Too large of a multiplier, please enter a new number. " << endl;
+        cin >> userMultiply;
+    }
 
     multiplicationTable(userStart, userEnd, userMultiply);
 }
