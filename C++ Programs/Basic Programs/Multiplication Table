@@ -1,31 +1,50 @@
 #include <iostream>
 using namespace std;
 
+// Function to print multiplication table for a given range of numbers and a multiplier
 void multiplicationTable(int startVal, int endVal, int multiplyTo) {
+    // Loop through the range of numbers
     for(int i = startVal; i <= endVal; i++) {
+        // Print the header for the multiplication table
         cout << "Multiplication table for " << i << endl;
+
+        // Loop through the multiplier
         for(int j = 1; j <= multiplyTo; j++) {
+            // Print the result of the multiplication
             cout << i << " * " << j << " = " << i * j << endl;
         }
+        // Print a new line for formatting
         cout << endl;
     }
 }
 
 int main()
 {
+    // Ask the user for the start value
     int userStart;
     cout << "What is the start value of your table?" << endl;
     cin >> userStart;
+
+    // Ask the user for the end value
     int userEnd;
     cout << "What is the end value of your table?" << endl;
     cin >> userEnd;
+
+    // Ask the user for the multiplier
     int userMultiply;
     cout << "What number do you want to multiply to? (No more than 100 to prevent overloading the program)" << endl;
     cin >> userMultiply;
+
+    // Check if the multiplier is too large
     if(userMultiply > 100){
+        // Ask the user to enter a new multiplier
         cout << "Too large of a multiplier, please enter a new number. " << endl;
         cin >> userMultiply;
     }
 
+    // Call the multiplicationTable function with the user's input
     multiplicationTable(userStart, userEnd, userMultiply);
+
+    // End the program
+    return 0;
 }

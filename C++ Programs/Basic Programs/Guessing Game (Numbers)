@@ -1,39 +1,39 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <cstdlib> // for srand and rand
+#include <ctime> // for time
 using namespace std;
 
 int main()
 {
-    srand(time(0));
-    int randomNum = rand() % 100 + 1;
-    int numGuesses = 0;
-    int userGuess;
-    char highScoreConfirm;
-    int highScore = 100;
+    srand(time(0)); // seed the random number generator with current time
+    int randomNum = rand() % 100 + 1; // generate a random number between 1 and 100
+    int numGuesses = 0; // initialize the number of guesses to 0
+    int userGuess; // declare a variable to store user's guess
+    char highScoreConfirm; // declare a variable to store user's high score confirmation
+    int highScore = 100; // initialize the high score to 100
 
     do {
-        cout << "Guess a number between 1 and 100: ";
-        cin >> userGuess;
+        cout << "Guess a number between 1 and 100: "; // ask user to guess a number
+        cin >> userGuess; // read user's guess from input
 
-        if (userGuess > randomNum) {
-            cout << "That's not right, try guessing lower!" << endl;
-            numGuesses += 1;
-        } else if (userGuess < randomNum) {
-            cout << "That's not right, try guessing higher!" << endl;
-            numGuesses += 1;
+        if (userGuess > randomNum) { // if user's guess is higher than the random number
+            cout << "That's not right, try guessing lower!" << endl; // inform user to guess lower
+            numGuesses += 1; // increment the number of guesses
+        } else if (userGuess < randomNum) { // if user's guess is lower than the random number
+            cout << "That's not right, try guessing higher!" << endl; // inform user to guess higher
+            numGuesses += 1; // increment the number of guesses
         }
-    } while (userGuess != randomNum);
+    } while (userGuess != randomNum); // repeat until user guesses the correct number
 
-    cout << "\nCongratulations! You guessed the number!" << endl;
-    cout << "It took you " << numGuesses << " guesses." << endl;
+    cout << "\nCongratulations! You guessed the number!" << endl; // inform user that they guessed the correct number
+    cout << "It took you " << numGuesses << " guesses." << endl; // inform user about the number of guesses
 
-    if(numGuesses < highScore) {
-        highScore = numGuesses;
-        cout << "New high score! Your high score is: " << highScore << "." << endl;
-    } else {
-        cout << "Your high score is " << highScore << "." << endl;
+    if(numGuesses < highScore) { // if user's score is better than the high score
+        highScore = numGuesses; // update the high score
+        cout << "New high score! Your high score is: " << highScore << "." << endl; // inform user about their new high score
+    } else { // if user's score is not better than the high score
+        cout << "Your high score is " << highScore << "." << endl; // inform user about their high score
     }
 
-    return 0;
+    return 0; // exit the program
 }
