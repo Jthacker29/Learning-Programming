@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class LabProgram {
+   public static void main(String[] args) throws IOException {
+      Scanner scnr = new Scanner(System.in);
+      int NUM_CHARACTERS = 26;      // Maximum number of letters
+      int MAX_WORDS = 10;           // Maximum number of synonyms per starting letter
+
+      String[][] synonyms = new String[NUM_CHARACTERS][MAX_WORDS];  // Declare 2D array for all synonyms
+      String[] words = new String[MAX_WORDS]; // The words of each input line
+
+      String word = scnr.next();
+      char letter = scnr.next().charAt(0);
+      
+      FileInputStream fileInputStream = new FileInputStream(word + ".txt");
+      Scanner fileScanner = new Scanner(fileInputStream);
+      
+      int rowIndex = letter - 'a';
+      int wordCount = 0;
+      
+      while (fileScanner.hasNextLine()) {
+         String line = fileScanner.nextLine();
+         words = line.split(" ");
+         
+         for (int i = 0; i < words.length; i++) {
+            if (words[i].charAt(0) == letter) {
+               synonyms[rowIndex][wordCount] = words[i];
+               wordCount++;
+            }
+         }
+      }
+      if (wordCount == 0) {
+         System.out.println("No synonyms for " + word + " begin with " + letter + ".");
+      } else {
+         for (int i = 0; i < wordCount; i++) {
+            System.out.println(synonyms[rowIndex][i]);
+         }
+      }
+      fileScanner.close();
+   }
+}
